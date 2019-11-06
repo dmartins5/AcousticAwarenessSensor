@@ -2,7 +2,7 @@
 #include <avr/interrupt.h>
 
 volatile uint16_t adc_data[200] __attribute__((address(0x0100)));
-volatile uint32_t interrupt[10] __attribute((address(0x290)));
+volatile uint32_t interrupt[10] __attribute__((address(0x0290)));
 volatile uint16_t ambient __attribute__((address(0x02B8)));
 volatile uint8_t adc_idx __attribute__((address(0x02B9)));
 volatile uint8_t int_idx __attribute__((address(0x02BA)));
