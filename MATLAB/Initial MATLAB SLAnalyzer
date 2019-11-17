@@ -1,0 +1,51 @@
+%Senior Design ECE457 Project Group 9
+%Fall 2019
+%Sound Level Analyzer - .wav files ECE457
+%Program should operate with sample rate Fs = 100Hz and accept .wav files
+%Program takes one sample and measures average and standard deviation and
+%compares 20 second average to two second average
+%%
+clf;clear all; clc; close all;
+
+
+fs1 = 100; %Sample rate of 100 Hz
+
+
+%User imports correct .wav file
+filename = 'sound.wav'; 
+clear y
+samples = [1,20*fs1]; %first 20 seconds of data
+
+
+
+[y, Fs] = audioread(filename); %read audio from file at any sample rate
+
+
+
+audiowrite(filename, y, fs1); %Write back into MATLAB with new sampling rate
+
+[y, fs1] = audioread(filename,samples); 
+
+y = transpose(y);
+
+%Plot time domain of signal
+
+t = 0:(1/fs1):20; %time vector - 20 seconds of data
+t(end)=[];
+figure(1)
+plot(t,y)
+xlabel('time (seconds)');
+ylabel('Audio Signal');
+title('First Twenty Seconds of Time Domain Signal')
+
+% Calculate Average and Standard Deviation
+
+totalaverage = mean(y); 
+totalstd = std(y);
+
+
+%Two second averages and standard deviations
+x = y([1800:2000]);
+
+mean2sec = mean(x);
+std2sec = std(x);
