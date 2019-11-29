@@ -1,8 +1,9 @@
-/* Drew Martins
- * 
- * Senior Project
- * Test Program
+/* Senior Project: Test Program
  * Auxiliary Switch
+ * 
+ * The goal of this program is to connect audio ports with the
+ * Quad Bilateral Switch (296-2061-5-ND) and toggle both the
+ * left signal and right signal on and off simultaniously
  */ 
 
 #include <avr/io.h>
