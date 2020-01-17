@@ -1,0 +1,35 @@
+//SUBARRAY AVERAGE FUNCTION
+
+double samples[200];  //Take in samples array
+int n; //number of sample in subarray
+
+double subarrayavg(samples[],double subarray[], n, int k)  //function to take in an array and create subarray of size in and starting point k
+
+{ for (int i = k, i<n, i++)
+  {subarray[i] = samples[];
+  }
+  
+double mean1 = mean(subarray);  //Compute average of subarray
+  return mean1
+  }
+  
+  
+  double result, x;
+  
+  int size = sizeof(samples)/sizeof(samples[0]); //Find size of total sample array
+  
+  int z = size/n //Find out how many additions to perform
+  
+  
+  //SUMMING FUNCTION
+  
+  double averagetotal(z)
+  { for(int = 0, i<z, i++)
+    result = subarrayavg(samples[],subarray[], n, i*n)  //Use subarrayavg function to create many averages to be added
+    }
+    
+  x = result;
+  
+  result = result + x; //add every average together
+  
+  }
