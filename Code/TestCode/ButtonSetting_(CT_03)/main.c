@@ -42,8 +42,10 @@ ISR (PCINT1_vect)
 		if(sleep_mode == 0x00)
 		{
 			sleep_mode = 0xFF; // Entering Sleep Mode
-			
+			SMCR = (1 << SM1);
+			SMCR |= (1 << SE);
 		} else {
+			SMCR &=~ (1 << SE); // Exiting Sleep Mode
 			sleep_mode = 0x00;
 			wdt_enable(WDTO_15MS);
 		}
