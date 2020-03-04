@@ -8,8 +8,10 @@ volatile uint8_t thresh_sensitivity __attribute__((address(0x800100)));
 // If thresh_sensitivity = 1, then Sensitivity is Medium
 // If thresh_sensitivity = 2, then Sensitivity is High
 volatile uint8_t sleep_code __attribute__((address(0x800101)));
-// If sleep_mode = 0xFF, then the device is powered off
 // If sleep_mode = 0x00, then the device is powered on
+// If sleep_mode = 0x0F, then the device restarts
+// If sleep_mode = 0xFF, then the device is powered off
+
 void WDT_init() __attribute__((naked)) __attribute__((section(".init3")));
 
 void WDT_init()
@@ -44,8 +46,8 @@ ISR (PCINT1_vect)
 		if(sleep_code == 0x00)
 		{
 			sleep_code = 0xFF;
-		} else if (sleep_code == 0xFF) {
-			sleep_code = 0x00;
+			} else if (sleep_code == 0xFF) {
+			sleep_code = 0x0F;
 		}
 	}
 	if(PINC & (1 << PINC3))
@@ -91,7 +93,7 @@ ISR (PCINT1_vect)
 		PORTD = 0x00;
 		set_sleep_mode(2);
 		sleep_mode();
-	} else if(sleep_code == 0x00) {
+		} else if(sleep_code == 0x0F) {
 		sleep_disable();
 		wdt_enable(WDTO_250MS);
 	}
