@@ -15,7 +15,7 @@ int main()
 	TCCR1B = (0b00<<WGM12)|(0b101<<CS10); // Set the Prescaler to 256
 	TIMSK1 = (0b1<<TOIE1); // Enables interrupts for TOV1
 
-	ADMUX = (1 << REFS1)|(1 << MUX2)|(1 << MUX0);
+	ADMUX = (1 << REFS0)|(1 << MUX2)|(1 << MUX0);
 	ADCSRA |= (0b111 << ADPS0);
 	ADCSRA |= (1 << ADEN);
 	
