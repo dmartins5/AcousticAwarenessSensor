@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Environment_Interrupt/1.0.0": {
+        "runtime": {
+          "Environment_Interrupt.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Environment_Interrupt/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
