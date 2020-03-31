@@ -47,12 +47,12 @@ namespace Environment_Interrupt
                 Console.WriteLine("Enter possible interrupt (dB):");
                 string temp_interrupt = Console.ReadLine();
 
-                int interrupt = int.Parse(temp_interrupt);
+                double interrupt = double.Parse(temp_interrupt);
 
                 if (interrupt >= threshold)
                 {
                     Console.WriteLine("Interrupt Has Occured");
-                    break;
+                    
                 }
                 else
                 {
