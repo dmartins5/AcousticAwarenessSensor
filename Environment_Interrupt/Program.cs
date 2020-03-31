@@ -52,6 +52,7 @@ namespace Environment_Interrupt
                 if (interrupt >= threshold)
                 {
                     Console.WriteLine("Interrupt Has Occured");
+                    break;
                 }
                 else
                 {
