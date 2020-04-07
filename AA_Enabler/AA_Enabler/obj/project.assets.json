@@ -5899,11 +5899,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jared\\source\\repos\\AA_Enabler\\AA_Enabler\\AA_Enabler.csproj",
+      "projectUniqueName": "C:\\Users\\Jared\\AcousticAwarenessSensor\\AA_Enabler\\AA_Enabler\\AA_Enabler.csproj",
       "projectName": "AA_Enabler",
-      "projectPath": "C:\\Users\\Jared\\source\\repos\\AA_Enabler\\AA_Enabler\\AA_Enabler.csproj",
+      "projectPath": "C:\\Users\\Jared\\AcousticAwarenessSensor\\AA_Enabler\\AA_Enabler\\AA_Enabler.csproj",
       "packagesPath": "C:\\Users\\Jared\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jared\\source\\repos\\AA_Enabler\\AA_Enabler\\obj\\",
+      "outputPath": "C:\\Users\\Jared\\AcousticAwarenessSensor\\AA_Enabler\\AA_Enabler\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jared\\AppData\\Roaming\\NuGet\\NuGet.Config",

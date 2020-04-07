@@ -3,7 +3,8 @@ using System.Data;
 using Excel = Microsoft.Office.Interop.Excel;
 using ClosedXML.Excel;
 
-
+//In order to use ClosedXML namespace, you must download nuget from nuget website
+//To enable it, go to Tools -> Nuget package manager -> Manage nuget packages for solution
 
 
 namespace AA_Enabler
@@ -28,21 +29,23 @@ namespace AA_Enabler
             string selection = Console.ReadLine();
 
             int select = int.Parse(selection);
-            DataTable _dt = new DataTable();
+            DataTable _dt = new DataTable(); //DataTable Stores valus
+            DataSet _ds = new DataSet(); //DataSet is used to display values
 
             string Book1 = @"C:\Users\Jared\source\repos\AA_Enabler\Book1.xlsx";
-            string Book2 = @"C:\Users\Jared\source\repos\AA_Enabler\Book2.xlsx";
+            string Book2 = @"C:\Users\Jared\source\repos\AA_Enabler\Book2.xlsx";  //Load file from computer location
             string Book3 = @"C:\Users\Jared\source\repos\AA_Enabler\Book3.xlsx";
             string Book4 = @"C:\Users\Jared\source\repos\AA_Enabler\Book4.xlsx";
             string Book5 = @"C:\Users\Jared\source\repos\AA_Enabler\Book5.xlsx";
             string Book6 = @"C:\Users\Jared\source\repos\AA_Enabler\Book6.xlsx";
 
 
-            switch (select)
+            switch (select)  //scan user input and select appropriate file
             {
                 case 1:
                 _dt = ImportSheet(Book1);
-                 break;
+                    break;
+                    
 
                 case 2:
                     _dt = ImportSheet(Book2);
@@ -65,9 +68,35 @@ namespace AA_Enabler
                     break;
             }
 
+            DataTableReader reader = _ds.CreateDataReader(_dt);
+            Console.WriteLine("\nData for the set (Ambient, Low, Med, High):\n");
+            PrintColumns(reader);
+
+            string[] str_col = new string[_dt.Rows.Count];
+
+
+            for (int index_c = 0; index_c < 4; index_c++)
+            {
+                for (int index_r = 0; index_r < _dt.Rows.Count; index_r++)
+            {
+
+                    str_col[index_r] = _dt.Rows[index_r][index_c].ToString();
+
+                }
+            }
+
+            foreach (string str in str_col)
+            {
+                Console.WriteLine(str);
+            }
+
         }
 
-        public static DataTable ImportSheet(string fileName)
+   
+
+
+
+        public static DataTable ImportSheet(string fileName) 
         {
             var datatable = new DataTable();
             var workbook = new XLWorkbook(fileName);
@@ -101,6 +130,18 @@ namespace AA_Enabler
                 firstHeadRow++;
             }
             return datatable;
+        }
+        static void PrintColumns(DataTableReader reader)
+        {
+            // Loop through all the rows in the DataTableReader
+            while (reader.Read())
+            {
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    Console.Write(reader[i] + " ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }

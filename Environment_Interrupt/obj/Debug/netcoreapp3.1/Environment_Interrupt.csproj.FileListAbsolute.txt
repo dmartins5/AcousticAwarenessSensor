@@ -9,3 +9,14 @@ C:\Users\Jared\source\repos\Environment_Interrupt\Environment_Interrupt\obj\Debu
 C:\Users\Jared\source\repos\Environment_Interrupt\Environment_Interrupt\obj\Debug\netcoreapp3.1\Environment_Interrupt.AssemblyInfo.cs
 C:\Users\Jared\source\repos\Environment_Interrupt\Environment_Interrupt\obj\Debug\netcoreapp3.1\Environment_Interrupt.dll
 C:\Users\Jared\source\repos\Environment_Interrupt\Environment_Interrupt\obj\Debug\netcoreapp3.1\Environment_Interrupt.pdb
+C:\Users\Jared\AcousticAwarenessSensor\Environment_Interrupt\bin\Debug\netcoreapp3.1\Environment_Interrupt.exe
+C:\Users\Jared\AcousticAwarenessSensor\Environment_Interrupt\bin\Debug\netcoreapp3.1\Environment_Interrupt.deps.json
+C:\Users\Jared\AcousticAwarenessSensor\Environment_Interrupt\bin\Debug\netcoreapp3.1\Environment_Interrupt.runtimeconfig.json
+C:\Users\Jared\AcousticAwarenessSensor\Environment_Interrupt\bin\Debug\netcoreapp3.1\Environment_Interrupt.runtimeconfig.dev.json
+C:\Users\Jared\AcousticAwarenessSensor\Environment_Interrupt\bin\Debug\netcoreapp3.1\Environment_Interrupt.dll
+C:\Users\Jared\AcousticAwarenessSensor\Environment_Interrupt\bin\Debug\netcoreapp3.1\Environment_Interrupt.pdb
+C:\Users\Jared\AcousticAwarenessSensor\Environment_Interrupt\obj\Debug\netcoreapp3.1\Environment_Interrupt.csprojAssemblyReference.cache
+C:\Users\Jared\AcousticAwarenessSensor\Environment_Interrupt\obj\Debug\netcoreapp3.1\Environment_Interrupt.AssemblyInfoInputs.cache
+C:\Users\Jared\AcousticAwarenessSensor\Environment_Interrupt\obj\Debug\netcoreapp3.1\Environment_Interrupt.AssemblyInfo.cs
+C:\Users\Jared\AcousticAwarenessSensor\Environment_Interrupt\obj\Debug\netcoreapp3.1\Environment_Interrupt.dll
+C:\Users\Jared\AcousticAwarenessSensor\Environment_Interrupt\obj\Debug\netcoreapp3.1\Environment_Interrupt.pdb

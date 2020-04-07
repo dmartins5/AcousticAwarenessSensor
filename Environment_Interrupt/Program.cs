@@ -25,7 +25,7 @@ namespace Environment_Interrupt
 
             if (level == 1)
             {
-                A = 4.16;
+                A = 3.5;
             }
             else if (level == 2)
             {
