@@ -14,10 +14,17 @@ volatile uint8_t adc_2sAvg_idx __attribute__((address(0x800181)));
 volatile uint16_t adc_sum_squared __attribute__((address(0x800182)));
 volatile uint16_t adc_std_dev __attribute__((address(0x800184)));
 
-volatile uint8_t thresh_sensitivity __attribute__((address(0x800190)));
-// If thresh_sensitivity = 220, then Sensitivity is Low
-// If thresh_sensitivity = 132, then Sensitivity is Medium
-// If thresh_sensitivity = 44, then Sensitivity is High
+volatile uint16_t thresh_high __attribute__((address(0x800190)));
+volatile uint16_t thresh_medium __attribute__((address(0x800192)));
+volatile uint16_t thresh_low __attribute__((address(0x800194)));
+volatile uint8_t thresh_mode __attribute__((address(0x800195)));
+// If thresh_mode == 0, Sensitivity = High
+// If thresh_mode == 1, Sensitivity = Medium
+// If thresh_mode >= 2, Sensitivity = Low
+
+volatile uint8_t aux_switch __attribute__((address(0x800196)));
+// If aux_switch == 3, Auxillary Ports are ON
+// If aux_switch == 0, Auxillary Ports are OFF
 
 int main(void)
 {
@@ -41,7 +48,10 @@ int main(void)
 	}
 	adc_2sAvg_idx = 0;
 	
-	thresh_sensitivity = 44;
+	thresh_mode = 0; // Set sensitivity to High
+	thresh_high = 44;		// High Sensitivity
+	thresh_medium = 132;	// Medium Sensitivity
+	thresh_low = 220;		// Low Sensitivity
 	
 	//TCNT1 = 12499;
 	//TCCR1A = (0b00<<COM1A0)|(0b00<<COM1B0)|(0b00<<WGM10);
@@ -50,9 +60,15 @@ int main(void)
 
 	sei();
 	
-    while(1)
-    {
-		adc_num = adc_2sAvg_idx + adc_num_idx + 1; // Reads ADC
+	while(1)
+	{
+		adc_num = 0;
+		if(adc_num_idx >= 0 && adc_num_idx < 100)
+		{
+			adc_num += adc_num_idx + 1;
+		} else {
+			adc_num_idx += 200 - adc_num_idx;
+		}
 		
 		adc_num_arr[adc_num_idx % 50] = adc_num; // Adds Element to the Array
 		adc_avg += adc_num_arr[adc_num_idx % 50];
@@ -91,11 +107,39 @@ int main(void)
 			adc_2sAvg_idx = 0;
 			adc_sum_squared = 0;
 		}
-    }
+		
+		if(adc_std_dev - thresh_high > 0 && thresh_mode == 0) // Above the High Sensitivity Threshold
+		{
+			aux_switch = 0;
+			// Disable Audio
+		} else if(adc_std_dev - thresh_medium > 0 && thresh_mode == 1) // Above the Medium Sensitivity Threshold
+		{
+			aux_switch = 0;
+			// Disable Audio
+		} else if(adc_std_dev - thresh_low > 0 && thresh_mode >= 2) // Above the Low Sensitivity Threshold
+		{
+			aux_switch = 0;
+			// Disable Audio
+		}
+		
+		if(adc_std_dev - thresh_high <= 0 && thresh_mode == 0) // Above the High Sensitivity Threshold
+		{
+			aux_switch = 3;
+			// Enable Audio
+		} else if(adc_std_dev - thresh_medium <= 0 && thresh_mode == 1) // Above the Medium Sensitivity Threshold
+		{
+			aux_switch = 3;
+			// Enable Audio
+		} else if(adc_std_dev - thresh_low <= 0 && thresh_mode >= 2) // Above the Low Sensitivity Threshold
+		{
+			aux_switch = 3;
+			// Enable Audio
+		}
+	}
 }
 
 //ISR(TIMER0_OVF_vect)
 //{
 //	TCNT1 = 12499;
-//	
+//
 //}
