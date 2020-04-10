@@ -73,23 +73,47 @@ namespace AA_Enabler
             PrintColumns(reader);
 
             string[] str_col = new string[_dt.Rows.Count];
+            int[] int_col_Ambient = new int[30];
+            int[] int_col_Low = new int[30];
+            int[] int_col_Med = new int[30];
+            int[] int_col_High = new int[30];
 
 
             for (int index_c = 0; index_c < 4; index_c++)
             {
-                for (int index_r = 0; index_r < _dt.Rows.Count; index_r++)
+                for (int index_r = 0; index_r < _dt.Rows.Count; index_r++)   //Printing out data
             {
 
                     str_col[index_r] = _dt.Rows[index_r][index_c].ToString();
 
+                    switch (index_c) //Each iteration of the table, store into separate integer column
+                    {
+                        case 0:
+                            int_col_Ambient = Array.ConvertAll(str_col, s => int.Parse(s));
+                            break;
+                        case 1:
+                            int_col_Low = Array.ConvertAll(str_col, s => int.Parse(s));
+                            break;
+                        case 2:
+                            int_col_Med = Array.ConvertAll(str_col, s => int.Parse(s));
+                            break;
+                        case 3:
+                            int_col_High = Array.ConvertAll(str_col, s => int.Parse(s));
+                            break;
+
+                    }
+
                 }
             }
 
-            foreach (string str in str_col)
-            {
-                Console.WriteLine(str);
-            }
+            int[] ten_rand_ambient = new int[10];
 
+            ten_rand_ambient = ten_Random(int_col_Ambient);
+
+            foreach (int i in ten_rand_ambient)     //Test random integer array of 10
+            {
+                Console.WriteLine(i);
+            }
         }
 
    
@@ -142,6 +166,23 @@ namespace AA_Enabler
                 }
                 Console.WriteLine();
             }
+        }
+
+        static int[] ten_Random(int[] array)
+        {
+            //Gets 10 random integers from an integer array
+            Random rand = new Random();
+
+            int r = rand.Next(array.Length);
+
+            int[] ten_array = new int[10];
+
+            for (int i = 0; i < 10; i++)
+            {
+                ten_array[i] = array[r];
+            }
+
+            return ten_array;
         }
     }
 }
