@@ -93,12 +93,23 @@ namespace AA_Enabler
                         case 0:
                             //d_col_Ambient = Array.ConvertAll(str_col, s => double.Parse(s)); //ATTEMPT 1 - CAUSES A NULL EXCEPTION -- TRY INT32 INSTEAD
 
-                            /* foreach (string value in str_col)
-                             * try {
+                            foreach (string value in str_col)
+                              try {
                                  result = Convert.ToInt32(value);
-                             * 
-                             * 
-                             */
+                              }
+                              catch (System.ArgumentNullException){
+                              
+                              Console.WriteLine("Found a null value.");
+                              
+                              }
+                                catch (System.FormatException)
+                                {
+
+                                    Console.WriteLine("Format wrong");
+
+                                }
+
+
 
 
 
