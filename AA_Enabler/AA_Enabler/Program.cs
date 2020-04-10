@@ -29,11 +29,11 @@ namespace AA_Enabler
             string selection = Console.ReadLine();
 
             int select = int.Parse(selection);
-            DataTable _dt = new DataTable(); //DataTable Stores valus
+            DataTable _dt = new DataTable(); //DataTable Stores values
             DataSet _ds = new DataSet(); //DataSet is used to display values
 
             string Book1 = @"C:\Users\Jared\source\repos\AA_Enabler\Book1.xlsx";
-            string Book2 = @"C:\Users\Jared\source\repos\AA_Enabler\Book2.xlsx";  //Load file from computer location
+            string Book2 = @"C:\Users\Jared\source\repos\AA_Enabler\Book2.xlsx";  //Load file from computer location, change as necessary based on where the file is
             string Book3 = @"C:\Users\Jared\source\repos\AA_Enabler\Book3.xlsx";
             string Book4 = @"C:\Users\Jared\source\repos\AA_Enabler\Book4.xlsx";
             string Book5 = @"C:\Users\Jared\source\repos\AA_Enabler\Book5.xlsx";
@@ -73,10 +73,10 @@ namespace AA_Enabler
             PrintColumns(reader);
 
             string[] str_col = new string[_dt.Rows.Count];
-            int[] int_col_Ambient = new int[30];
-            int[] int_col_Low = new int[30];
-            int[] int_col_Med = new int[30];
-            int[] int_col_High = new int[30];
+            double[] d_col_Ambient = new double[30];
+            double[] d_col_Low = new double[30];
+            double[] d_col_Med = new double[30];
+            double[] d_col_High = new double[30];
 
 
             for (int index_c = 0; index_c < 4; index_c++)
@@ -86,19 +86,31 @@ namespace AA_Enabler
 
                     str_col[index_r] = _dt.Rows[index_r][index_c].ToString();
 
-                    switch (index_c) //Each iteration of the table, store into separate integer column
+                    int result;
+
+                    switch (index_c) //Each iteration of the table, store into separate double column
                     {
                         case 0:
-                            int_col_Ambient = Array.ConvertAll(str_col, s => int.Parse(s));
+                            //d_col_Ambient = Array.ConvertAll(str_col, s => double.Parse(s)); //ATTEMPT 1 - CAUSES A NULL EXCEPTION -- TRY INT32 INSTEAD
+
+                            /* foreach (string value in str_col)
+                             * try {
+                                 result = Convert.ToInt32(value);
+                             * 
+                             * 
+                             */
+
+
+
                             break;
                         case 1:
-                            int_col_Low = Array.ConvertAll(str_col, s => int.Parse(s));
+                            d_col_Low = Array.ConvertAll(str_col, s => double.Parse(s));
                             break;
                         case 2:
-                            int_col_Med = Array.ConvertAll(str_col, s => int.Parse(s));
+                            d_col_Med = Array.ConvertAll(str_col, s => double.Parse(s));
                             break;
                         case 3:
-                            int_col_High = Array.ConvertAll(str_col, s => int.Parse(s));
+                            d_col_High = Array.ConvertAll(str_col, s => double.Parse(s));
                             break;
 
                     }
@@ -106,11 +118,11 @@ namespace AA_Enabler
                 }
             }
 
-            int[] ten_rand_ambient = new int[10];
+            double[] ten_rand_ambient = new double[10];
 
-            ten_rand_ambient = ten_Random(int_col_Ambient);
+            ten_rand_ambient = ten_Random(d_col_Ambient);
 
-            foreach (int i in ten_rand_ambient)     //Test random integer array of 10
+            foreach (double i in ten_rand_ambient)     //Test random integer array of 10
             {
                 Console.WriteLine(i);
             }
@@ -168,14 +180,14 @@ namespace AA_Enabler
             }
         }
 
-        static int[] ten_Random(int[] array)
+        static double[] ten_Random(double[] array)
         {
             //Gets 10 random integers from an integer array
             Random rand = new Random();
 
             int r = rand.Next(array.Length);
 
-            int[] ten_array = new int[10];
+            double[] ten_array = new double[10];
 
             for (int i = 0; i < 10; i++)
             {
