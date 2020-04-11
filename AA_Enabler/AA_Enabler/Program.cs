@@ -18,7 +18,7 @@ namespace AA_Enabler
          * Select environment from the environments that we have data for. 
          * Loads selected environment. Choose 10 random numbers from the list of 30 numbers from the column for Ambient data.
          * Display the 10 random numbers. We currently do this, but instead of typing in 10 numbers, we want the environment to be simulated in some level as though the last 20 seconds were in that environment.
-         * Calculate average and standard deviation for the environment and display it.
+         * Calculate average and standard deviation for the environment and display threshold
          * Ask user to submit a new 2 second average for the environment.
          * Calculate if that new 2 second average is an interrupt for each threshold setting
          * 
@@ -166,6 +166,49 @@ namespace AA_Enabler
             }
 
             Console.WriteLine();
+
+
+            while (true)
+            {
+                Console.WriteLine("Enter a two second average:");
+                string str = Console.ReadLine();
+                double two_avg = double.Parse(str);
+
+
+                if (t == 3)
+                {
+                    if (two_avg >= t1)
+                    {
+                        Console.WriteLine("Interrupt has occurred");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No interrupt");
+                    }
+                }
+                if (t == 2)
+                {
+                    if (two_avg >= t2)
+                    {
+                        Console.WriteLine("Interrupt has occurred");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No interrupt");
+                    }
+                }
+                if (t == 1)
+                {
+                    if (two_avg >= t3)
+                    {
+                        Console.WriteLine("Interrupt has occurred");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No interrupt");
+                    }
+                }
+            }
         }
 
    
