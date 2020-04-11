@@ -2,6 +2,7 @@
 using System.Data;
 using Excel = Microsoft.Office.Interop.Excel;
 using ClosedXML.Excel;
+using System.Linq;
 
 //In order to use ClosedXML namespace, you must download nuget from nuget website
 //To enable it, go to Tools -> Nuget package manager -> Manage nuget packages for solution
@@ -20,6 +21,9 @@ namespace AA_Enabler
          * Calculate average and standard deviation for the environment and display it.
          * Ask user to submit a new 2 second average for the environment.
          * Calculate if that new 2 second average is an interrupt for each threshold setting
+         * 
+         * average of each environments - real interrupt level
+         * 
          * 
          **/
 
@@ -72,71 +76,96 @@ namespace AA_Enabler
             Console.WriteLine("\nData for the set (Ambient, Low, Med, High):\n");
             PrintColumns(reader);
 
-            string[] str_col = new string[_dt.Rows.Count];
+            //string[] str_col = new string[_dt.Rows.Count];
             double[] d_col_Ambient = new double[30];
             double[] d_col_Low = new double[30];
             double[] d_col_Med = new double[30];
             double[] d_col_High = new double[30];
 
 
-            for (int index_c = 0; index_c < 4; index_c++)
+            for (int index_r = 0; index_r < _dt.Rows.Count; index_r++)
             {
-                for (int index_r = 0; index_r < _dt.Rows.Count; index_r++)   //Printing out data
-            {
+                int index_c = 0;
 
-                    str_col[index_r] = _dt.Rows[index_r][index_c].ToString();
+                d_col_Ambient[index_r] = double.Parse(_dt.Rows[index_r][index_c].ToString());
 
-                    int result;
-
-                    switch (index_c) //Each iteration of the table, store into separate double column
-                    {
-                        case 0:
-                            //d_col_Ambient = Array.ConvertAll(str_col, s => double.Parse(s)); //ATTEMPT 1 - CAUSES A NULL EXCEPTION -- TRY INT32 INSTEAD
-
-                            foreach (string value in str_col)
-                              try {
-                                 result = Convert.ToInt32(value);
-                              }
-                              catch (System.ArgumentNullException){
-                              
-                              Console.WriteLine("Found a null value.");
-                              
-                              }
-                                catch (System.FormatException)
-                                {
-
-                                    Console.WriteLine("Format wrong");
-
-                                }
-
-
-
-
-
-                            break;
-                        case 1:
-                            d_col_Low = Array.ConvertAll(str_col, s => double.Parse(s));
-                            break;
-                        case 2:
-                            d_col_Med = Array.ConvertAll(str_col, s => double.Parse(s));
-                            break;
-                        case 3:
-                            d_col_High = Array.ConvertAll(str_col, s => double.Parse(s));
-                            break;
-
-                    }
-
-                }
             }
 
-            double[] ten_rand_ambient = new double[10];
+            for (int index_r = 0; index_r < _dt.Rows.Count; index_r++)
+            {
+                int index_c = 1;
+
+                d_col_Low[index_r] = double.Parse(_dt.Rows[index_r][index_c].ToString());
+
+            }
+
+            for (int index_r = 0; index_r < _dt.Rows.Count; index_r++)
+            {
+                int index_c = 2;
+
+                d_col_Med[index_r] = double.Parse(_dt.Rows[index_r][index_c].ToString());
+
+            }
+
+            for (int index_r = 0; index_r < _dt.Rows.Count; index_r++)
+            {
+                int index_c = 3;
+
+                d_col_High[index_r] = double.Parse(_dt.Rows[index_r][index_c].ToString());
+
+            }
+
+            //foreach (double q in d_col_Ambient)     //Test ambient double array
+            //{
+            //    Console.WriteLine(q);
+            //}
+
+            Console.WriteLine();
+
+        double[] ten_rand_ambient = new double[10];
 
             ten_rand_ambient = ten_Random(d_col_Ambient);
+
+            Console.WriteLine("Ten Random Numbers from Ambient Data Set");
 
             foreach (double i in ten_rand_ambient)     //Test random integer array of 10
             {
                 Console.WriteLine(i);
             }
+
+            Console.WriteLine();
+            double ten_avg_ambient = ten_rand_ambient.Average();
+            double std;
+
+
+            Console.WriteLine("Select a Sensitivity Level (Low [1], Medium [2], High [3])");
+            string x = Console.ReadLine();
+            int t = Int32.Parse(x);
+
+
+            double sumOfSquaresOfDifferences = d_col_Ambient.Select(val => (val - ten_avg_ambient) * (val - ten_avg_ambient)).Sum();
+            std = Math.Sqrt(sumOfSquaresOfDifferences / d_col_Ambient.Length);
+
+
+            double t1 = ten_avg_ambient + 3.5 * std;
+            double t2 = ten_avg_ambient + 12.17 * std;
+            double t3 = ten_avg_ambient + 24.03 * std;
+
+            if (t == 3)
+            {
+                Console.WriteLine("The Instantaneous Threshold Level is: {0}", t1 );
+
+            }
+            else if (t == 2)
+            {
+                Console.WriteLine("The Instantaneous Threshold Level is: {0}", t2);
+            }
+            else
+            {
+                Console.WriteLine("The Instantaneous Threshold Level is: {0}", t3);
+            }
+
+            Console.WriteLine();
         }
 
    
@@ -196,12 +225,11 @@ namespace AA_Enabler
             //Gets 10 random integers from an integer array
             Random rand = new Random();
 
-            int r = rand.Next(array.Length);
-
             double[] ten_array = new double[10];
 
             for (int i = 0; i < 10; i++)
             {
+                int r = rand.Next(array.Length - 1);
                 ten_array[i] = array[r];
             }
 
