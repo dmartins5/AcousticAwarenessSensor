@@ -1,0 +1,37 @@
+{ Using PSTWRITER 17.2.0 d001Apr-26-2020 at 21:46:29 }
+
+#1 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R4: SCHEMATIC1, PAGE1 (4.40, 2.10).
+#2 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R14: SCHEMATIC1, PAGE1 (0.60, 5.60).
+#3 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R3: SCHEMATIC1, PAGE1 (4.80, 2.20).
+#4 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U13: SCHEMATIC1, PAGE1 (3.00, 0.60).
+#5 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R2: SCHEMATIC1, PAGE1 (1.80, 1.00).
+#6 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U12: SCHEMATIC1, PAGE1 (3.50, 5.50).
+#7 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R1: SCHEMATIC1, PAGE1 (2.20, 1.30).
+#8 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C4: SCHEMATIC1, PAGE1 (6.80, 2.30).
+#9 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J12: SCHEMATIC1, PAGE1 (5.10, 5.50).
+#10 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J13: SCHEMATIC1, PAGE1 (0.60, 5.00).
+#11 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J9: SCHEMATIC1, PAGE1 (8.20, 3.70).
+#12 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J10: SCHEMATIC1, PAGE1 (8.70, 3.60).
+#13 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J8: SCHEMATIC1, PAGE1 (7.70, 3.80).
+#14 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C1: SCHEMATIC1, PAGE1 (0.40, 3.90).
+#15 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C2: SCHEMATIC1, PAGE1 (1.10, 6.10).
+#16 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J11: SCHEMATIC1, PAGE1 (8.80, 2.70).
+#17 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J7: SCHEMATIC1, PAGE1 (7.20, 3.90).
+#18 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance C3: SCHEMATIC1, PAGE1 (0.90, 1.40).
+#19 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J16: SCHEMATIC1, PAGE1 (0.30, 1.00).
+#20 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J6: SCHEMATIC1, PAGE1 (6.70, 4.00).
+#21 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R9: SCHEMATIC1, PAGE1 (6.10, 3.60).
+#22 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R12: SCHEMATIC1, PAGE1 (1.80, 6.00).
+#23 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R8: SCHEMATIC1, PAGE1 (6.10, 3.50).
+#24 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J5: SCHEMATIC1, PAGE1 (2.00, 0.70).
+#25 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J14: SCHEMATIC1, PAGE1 (0.50, 6.40).
+#26 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R13: SCHEMATIC1, PAGE1 (1.80, 5.30).
+#27 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J4: SCHEMATIC1, PAGE1 (5.20, 1.70).
+#28 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance J15: SCHEMATIC1, PAGE1 (6.30, 1.70).
+#29 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R10: SCHEMATIC1, PAGE1 (5.00, 6.60).
+#30 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R7: SCHEMATIC1, PAGE1 (6.10, 3.40).
+#31 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R11: SCHEMATIC1, PAGE1 (4.30, 6.60).
+#32 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R6: SCHEMATIC1, PAGE1 (6.10, 3.30).
+#33 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance R5: SCHEMATIC1, PAGE1 (6.10, 3.20).
+#34 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U11: SCHEMATIC1, PAGE1 (1.70, 2.50).
+#35 ERROR(ORCAP-36018): Aborting Netlisting... Please correct the above errors and retry.

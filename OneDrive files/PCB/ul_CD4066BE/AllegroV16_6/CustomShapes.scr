@@ -1,0 +1,52 @@
+# Allegro Script file created by :
+# Ultra Librarian Gold 8.3.215 Copyright © 1999-2018 EMA Design Automation
+# http://www.UltraLibrarian.com
+ 
+# Registered to :
+# Frank Frank
+# 
+ 
+ 
+version 14.0
+enved
+setwindow Form.prfedit
+FORM prfedit treelist Ui
+FORM prfedit noconfirm YES
+FORM prfedit done
+ 
+setwindow pcb
+#################### New Flash : ths41x51x45x10 ##################
+new
+newdrawfillin "ths41x51x45x10.dra" "Flash Symbol"
+prmed
+setwindow Form.prmedit
+FORM prmedit design
+FORM prmedit type Flash
+FORM prmedit units Mils
+FORM prmedit size Other
+FORM prmedit accuracy 2
+FORM prmedit width 122
+FORM prmedit height 122
+FORM prmedit apply
+FORM prmedit x -61
+FORM prmedit y -61
+FORM prmedit apply
+FORM prmedit lock_mode Line
+FORM prmedit lock_direction Off
+FORM prmedit apply
+FORM prmedit done
+setwindow pcb
+Add Flash
+setwindow Form.thermflash
+FORM thermflash indiam 41
+FORM thermflash outdia 51
+FORM thermflash spkwdth 10
+FORM thermflash spknum 4
+FORM thermflash spkangl 45
+FORM thermflash done
+setwindow pcb
+Create Symbol
+fillin "ths41x51x45x10.fsm"
+save
+
+exit

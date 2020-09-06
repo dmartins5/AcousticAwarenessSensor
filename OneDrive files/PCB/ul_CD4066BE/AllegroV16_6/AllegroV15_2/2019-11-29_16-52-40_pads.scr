@@ -1,0 +1,161 @@
+# Allegro Script file created by :
+# Ultra Librarian Gold 8.3.215 Copyright © 1999-2018 EMA Design Automation
+# http://www.UltraLibrarian.com
+ 
+# Registered to :
+# Frank Frank
+# 
+ 
+# Original file name : 
+ 
+Version 13.6
+
+setwindow Form.padedit
+FORM padedit single NO
+
+######################## New PadStack #########################
+pse_new
+fillin "SX51Y51D31P.pad"
+
+FORM padedit units Mils
+FORM padedit decimal_places 4
+
+FORM padedit layers
+FORM padedit grid row 1
+FORM padedit geometry Square
+FORM padedit width 51
+FORM padedit height 51
+FORM padedit x_offset 0
+FORM padedit y_offset 0
+FORM padedit geometry_th Null
+FORM padedit grid row 3
+FORM padedit geometry Square
+FORM padedit width 51
+FORM padedit height 51
+FORM padedit x_offset 0
+FORM padedit y_offset 0
+FORM padedit geometry_th Null
+FORM padedit grid row 2
+FORM padedit geometry Square
+FORM padedit width 51
+FORM padedit height 51
+FORM padedit x_offset 0
+FORM padedit y_offset 0
+FORM padedit grid row 2
+FORM padedit geometry_th Flash
+FORM padedit width_th 51
+FORM padedit height_th 51
+FORM padedit x_offset_th 0
+FORM padedit y_offset_th 0
+FORM padedit flashbutton_th
+fillin ths41x51x45x10
+FORM padedit grid row 2
+FORM padedit grid row 2
+FORM padedit geometry_ant Circle
+FORM padedit width_ant 51
+FORM padedit height_ant 51
+FORM padedit x_offset_ant 0
+FORM padedit y_offset_ant 0
+FORM padedit grid row 4
+FORM padedit geometry Square
+FORM padedit width 51
+FORM padedit height 51
+FORM padedit x_offset 0
+FORM padedit y_offset 0
+FORM padedit grid row 5
+FORM padedit geometry Square
+FORM padedit width 51
+FORM padedit height 51
+FORM padedit x_offset 0
+FORM padedit y_offset 0
+FORM padedit grid row 6
+FORM padedit geometry Null
+FORM padedit grid row 7
+FORM padedit geometry Null
+FORM padedit parameters
+FORM padedit through_hole YES
+FORM padedit hole_size_y 31
+FORM padedit hole_size_x 31
+FORM padedit drill_fig Triangle
+FORM padedit characters e
+FORM padedit drill_width 50
+FORM padedit drill_height 50
+FORM padedit plating Plated
+pse_save_as
+fillin "SX51Y51D31P.pad"
+FORM padedit single NO
+
+######################## New PadStack #########################
+pse_new
+fillin "EX51Y51D31P.pad"
+
+FORM padedit units Mils
+FORM padedit decimal_places 4
+
+FORM padedit layers
+FORM padedit grid row 1
+FORM padedit geometry Circle
+FORM padedit width 51
+FORM padedit height 51
+FORM padedit x_offset 0
+FORM padedit y_offset 0
+FORM padedit geometry_th Null
+FORM padedit grid row 3
+FORM padedit geometry Circle
+FORM padedit width 51
+FORM padedit height 51
+FORM padedit x_offset 0
+FORM padedit y_offset 0
+FORM padedit geometry_th Null
+FORM padedit grid row 2
+FORM padedit geometry Circle
+FORM padedit width 51
+FORM padedit height 51
+FORM padedit x_offset 0
+FORM padedit y_offset 0
+FORM padedit grid row 2
+FORM padedit geometry_th Flash
+FORM padedit width_th 51
+FORM padedit height_th 51
+FORM padedit x_offset_th 0
+FORM padedit y_offset_th 0
+FORM padedit flashbutton_th
+fillin ths41x51x45x10
+FORM padedit grid row 2
+FORM padedit grid row 2
+FORM padedit geometry_ant Circle
+FORM padedit width_ant 51
+FORM padedit height_ant 51
+FORM padedit x_offset_ant 0
+FORM padedit y_offset_ant 0
+FORM padedit grid row 4
+FORM padedit geometry Circle
+FORM padedit width 51
+FORM padedit height 51
+FORM padedit x_offset 0
+FORM padedit y_offset 0
+FORM padedit grid row 5
+FORM padedit geometry Circle
+FORM padedit width 51
+FORM padedit height 51
+FORM padedit x_offset 0
+FORM padedit y_offset 0
+FORM padedit grid row 6
+FORM padedit geometry Null
+FORM padedit grid row 7
+FORM padedit geometry Null
+FORM padedit parameters
+FORM padedit through_hole YES
+FORM padedit hole_size_y 31
+FORM padedit hole_size_x 31
+FORM padedit drill_fig Triangle
+FORM padedit characters e
+FORM padedit drill_width 50
+FORM padedit drill_height 50
+FORM padedit plating Plated
+pse_save_as
+fillin "EX51Y51D31P.pad"
+pse_exit
+FORM padedit done
+ 
+# end of padstack script

@@ -1,0 +1,7358 @@
+# Allegro Script file created by :
+# Ultra Librarian Gold 8.3.134 Copyright © 1999-2018 EMA Design Automation
+# http://www.UltraLibrarian.com
+ 
+# Registered to :
+# Frank Frank
+# 
+ 
+ 
+version 14.0
+
+
+# **************************New Pattern starts here************************
+version 14.0
+
+setwindow pcb
+open
+fillin "blank_drawing.dra"
+drawing param
+setwindow Form.drawing
+FORM drawing type Package
+FORM drawing units Mils
+FORM drawing size Other
+FORM drawing accuracy 4
+FORM drawing width 2439.53
+FORM drawing height 2612.17
+FORM drawing x 0.00
+FORM drawing y 0.00
+FORM drawing move_x 1194.76
+FORM drawing move_y 1242.09
+FORM drawing done
+setwindow pcb
+status
+setwindow form.status
+FORM status lock_direction Off
+FORM status lock_mode line
+FORM status symbol_mirror NO
+FORM status drawing_size
+FORM status done
+setwindow pcb
+window center; pick     0.0     0.0
+# Starting C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_Start.scr...
+#
+# Allegro Footprint User-Initialization Script
+#
+# A place to put custom (user-definable) things that need to be done before adding data into a new footprint.
+#
+# ... End of C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_Start.scr
+
+define subclass
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SILKSCREEN_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERPASTE_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETR pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERMASK_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_BOTTOM
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERMASK_BOTTOM
+setwindow form.subclass
+FORM subclass PIN pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PASTEMASK_BOTTOM
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SILKSCREEN_BOTTOM
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_BOTTOM
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name OUTLINE
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_TOP
+setwindow form.subclass
+FORM subclass REF_DES pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass USER_PART_NUMBER pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass DEVICE_TYPE pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass TOLERANCE pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass COMPONENT_VALUE pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_BOTTOM
+setwindow form.subclass
+FORM subclass MANUFACTURING pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name NO_PROBE_TOP
+setwindow form.subclass
+FORM subclass MANUFACTURING pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name NO_PROBE_BOTTOM
+setwindow form.subclass
+FORM subclass CONSTRAINT_REGION pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ALL
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name CUTOUTSLOTS
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DIEBONDPADS
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name WIREBONDS
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PIN
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_DETAIL
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name OUTLINE
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name COPY RIGHT
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name OUTLINE
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DFA_BOUND_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERPASTE_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name NPH_MTG_HOLE
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name METADATA
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DESIGNER_NOTES
+setwindow form.subclass
+FORM subclass CONSTRAINT_REGION pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name K_DOT
+setwindow form.subclass
+FORM subclass PIN pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name FILMMASKTOP
+setwindow form.subclass
+FORM subclass PIN pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name FILMMASKBOTTOM
+FORM subclass done
+
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 1
+setwindow pcb
+pick -167.32 110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 2
+setwindow pcb
+pick -167.32 78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 3
+setwindow pcb
+pick -167.32 47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 4
+setwindow pcb
+pick -167.32 15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 5
+setwindow pcb
+pick -167.32 -15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 6
+setwindow pcb
+pick -167.32 -47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 7
+setwindow pcb
+pick -167.32 -78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 8
+setwindow pcb
+pick -167.32 -110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 9
+setwindow pcb
+pick -110.24 -167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 10
+setwindow pcb
+pick -78.74 -167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 11
+setwindow pcb
+pick -47.24 -167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 12
+setwindow pcb
+pick -15.75 -167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 13
+setwindow pcb
+pick 15.75 -167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 14
+setwindow pcb
+pick 47.24 -167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 15
+setwindow pcb
+pick 78.74 -167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 16
+setwindow pcb
+pick 110.24 -167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 17
+setwindow pcb
+pick 167.32 -110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 18
+setwindow pcb
+pick 167.32 -78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 19
+setwindow pcb
+pick 167.32 -47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 20
+setwindow pcb
+pick 167.32 -15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 21
+setwindow pcb
+pick 167.32 15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 22
+setwindow pcb
+pick 167.32 47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 23
+setwindow pcb
+pick 167.32 78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 24
+setwindow pcb
+pick 167.32 110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 25
+setwindow pcb
+pick 110.24 167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 26
+setwindow pcb
+pick 78.74 167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 27
+setwindow pcb
+pick 47.24 167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 28
+setwindow pcb
+pick 15.75 167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 29
+setwindow pcb
+pick -15.75 167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 30
+setwindow pcb
+pick -47.24 167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 31
+setwindow pcb
+pick -78.74 167.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX19p72Y57p53D0T
+setwindow form.mini
+FORM mini next_pin_number 32
+setwindow pcb
+pick -110.24 167.32
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -86.2 -206.1
+pick -86.2 -216.1
+pick -71.2 -216.1
+pick -71.2 -206.1
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick 216.1 -8.2
+pick 216.1 -23.2
+pick 206.1 -23.2
+pick 206.1 -8.2
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -54.7 206.1
+pick -54.7 216.1
+pick -39.7 216.1
+pick -39.7 206.1
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass PLACE_BOUND_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -149.8 -149.8
+pick -149.8 -130.1
+pick -206.1 -130.1
+pick -206.1 130.1
+pick -149.8 130.1
+pick -149.8 149.8
+pick -130.1 149.8
+pick -130.1 206.1
+pick 130.1 206.1
+pick 130.1 149.8
+pick 149.8 149.8
+pick 149.8 130.1
+pick 206.1 130.1
+pick 206.1 -130.1
+pick 149.8 -130.1
+pick 149.8 -149.8
+pick 130.1 -149.8
+pick 130.1 -206.1
+pick -130.1 -206.1
+pick -130.1 -149.8
+done
+property edit
+setwindow Form.Find
+FORM find all_off
+FORM find shapes YES
+setwindow pcb
+pick grid -149.8 -149.8
+setwindow Form.editprop1
+FORM editprop1 properties PACKAGE_HEIGHT_MAX
+setwindow Form.editprop2
+FORM editprop2 package_height_max ele_prop_value 47
+FORM editprop2 apply
+setwindow Form.editprop1
+FORM editprop1 done
+setwindow Form.Find
+FORM find all_on
+property edit
+setwindow Form.Find
+FORM find all_off
+FORM find shapes YES
+setwindow pcb
+pick grid -149.8 -149.8
+setwindow Form.editprop1
+FORM editprop1 properties PACKAGE_HEIGHT_MIN
+setwindow Form.editprop2
+FORM editprop2 package_height_min ele_prop_value 10
+FORM editprop2 apply
+setwindow Form.editprop1
+FORM editprop1 done
+setwindow Form.Find
+FORM find all_on
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class MANUFACTURING
+FORM mini subclass NO_PROBE_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -221.1 -221.1
+pick -221.1 221.1
+pick 221.1 221.1
+pick 221.1 -221.1
+done
+setwindow pcb
+add text
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass PLACE_BOUND_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "47.24409"
+setwindow pcb
+label refdes
+setwindow form.mini
+FORM mini class REF DES
+FORM mini subclass SILKSCREEN_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "REF"
+setwindow pcb
+setwindow pcb
+label refdes
+setwindow form.mini
+FORM mini class REF DES
+FORM mini subclass ASSEMBLY_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "REF"
+setwindow pcb
+setwindow pcb
+label device
+setwindow form.mini
+FORM mini class DEVICE TYPE
+FORM mini subclass ASSEMBLY_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "32A"
+setwindow pcb
+setwindow pcb
+add text
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick -221.1 116
+text "*"
+setwindow pcb
+add text
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick -124.8 101
+text "*"
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 139.8
+pick 119.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 139.8
+pick 119.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 182.1
+pick 101.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 182.1
+pick 101.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 139.8
+pick 87.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 139.8
+pick 87.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 182.1
+pick 69.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 182.1
+pick 69.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 139.8
+pick 56.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 139.8
+pick 56.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 182.1
+pick 38.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 182.1
+pick 38.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 139.8
+pick 24.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 139.8
+pick 24.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 182.1
+pick 6.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 182.1
+pick 6.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 139.8
+pick -6.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 139.8
+pick -6.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 182.1
+pick -24.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 182.1
+pick -24.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 139.8
+pick -38.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 139.8
+pick -38.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 182.1
+pick -56.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 182.1
+pick -56.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 139.8
+pick -69.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 139.8
+pick -69.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 182.1
+pick -87.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 182.1
+pick -87.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 139.8
+pick -101.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 139.8
+pick -101.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 182.1
+pick -119.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 182.1
+pick -119.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 101.4
+pick -139.8 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 119.1
+pick -182.1 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 119.1
+pick -182.1 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 101.4
+pick -139.8 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 69.9
+pick -139.8 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 87.6
+pick -182.1 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 87.6
+pick -182.1 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 69.9
+pick -139.8 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 38.4
+pick -139.8 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 56.1
+pick -182.1 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 56.1
+pick -182.1 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 38.4
+pick -139.8 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 6.9
+pick -139.8 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 24.6
+pick -182.1 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 24.6
+pick -182.1 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 6.9
+pick -139.8 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -24.6
+pick -139.8 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -6.9
+pick -182.1 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -6.9
+pick -182.1 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -24.6
+pick -139.8 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -56.1
+pick -139.8 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -38.4
+pick -182.1 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -38.4
+pick -182.1 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -56.1
+pick -139.8 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -87.6
+pick -139.8 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -69.9
+pick -182.1 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -69.9
+pick -182.1 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -87.6
+pick -139.8 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -119.1
+pick -139.8 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -101.4
+pick -182.1 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -101.4
+pick -182.1 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -119.1
+pick -139.8 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 -139.8
+pick -119.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 -139.8
+pick -119.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 -182.1
+pick -101.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 -182.1
+pick -101.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 -139.8
+pick -87.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 -139.8
+pick -87.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 -182.1
+pick -69.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 -182.1
+pick -69.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 -139.8
+pick -56.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 -139.8
+pick -56.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 -182.1
+pick -38.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 -182.1
+pick -38.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 -139.8
+pick -24.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 -139.8
+pick -24.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 -182.1
+pick -6.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 -182.1
+pick -6.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 -139.8
+pick 6.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 -139.8
+pick 6.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 -182.1
+pick 24.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 -182.1
+pick 24.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 -139.8
+pick 38.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 -139.8
+pick 38.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 -182.1
+pick 56.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 -182.1
+pick 56.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 -139.8
+pick 69.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 -139.8
+pick 69.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 -182.1
+pick 87.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 -182.1
+pick 87.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 -139.8
+pick 101.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 -139.8
+pick 101.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 -182.1
+pick 119.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 -182.1
+pick 119.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -101.4
+pick 139.8 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -119.1
+pick 182.1 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -119.1
+pick 182.1 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -101.4
+pick 139.8 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -69.9
+pick 139.8 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -87.6
+pick 182.1 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -87.6
+pick 182.1 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -69.9
+pick 139.8 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -38.4
+pick 139.8 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -56.1
+pick 182.1 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -56.1
+pick 182.1 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -38.4
+pick 139.8 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -6.9
+pick 139.8 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -24.6
+pick 182.1 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -24.6
+pick 182.1 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -6.9
+pick 139.8 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 24.6
+pick 139.8 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 6.9
+pick 182.1 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 6.9
+pick 182.1 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 24.6
+pick 139.8 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 56.1
+pick 139.8 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 38.4
+pick 182.1 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 38.4
+pick 182.1 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 56.1
+pick 139.8 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 87.6
+pick 139.8 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 69.9
+pick 182.1 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 69.9
+pick 182.1 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 87.6
+pick 139.8 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 119.1
+pick 139.8 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 101.4
+pick 182.1 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 101.4
+pick 182.1 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 119.1
+pick 139.8 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 89.8
+pick -89.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -144.8 -144.8
+pick -133.2 -144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 144.8 -144.8
+pick 144.8 -133.2
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 144.8 144.8
+pick 133.2 144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -144.8 144.8
+pick -144.8 133.2
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -144.8 -133.2
+pick -144.8 -144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -139.8
+pick 139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -139.8
+pick 139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -139.8
+pick 139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 139.8
+pick 139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 139.8
+pick -139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 139.8
+pick -139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 139.8
+pick -139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -139.8
+pick -139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 133.2 -144.8
+pick 144.8 -144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 144.8 133.2
+pick 144.8 144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -133.2 144.8
+pick -144.8 144.8
+done
+# Starting C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_End.scr...
+#
+# Allegro Footprint User-Customization Script
+#
+# A place to put custom (user-definable) things that need to be done after adding data to a new footprint, before it is saved.
+#
+# change database units to millimeters
+
+
+#setwindow pcb
+#drawing param 
+#setwindow form.drawing
+#FORM drawing units Millimeter 
+#FORM drawing done  
+#setwindow pcb
+#trapsize 1742
+# allegro recommends running a db check after changing the units of measure
+#dbdoctor 
+#setwindow form.dbdoctor_allegro
+#FORM dbdoctor_allegro drc YES 
+#FORM dbdoctor_allegro shapes YES 
+#FORM dbdoctor_allegro execute  
+#FORM dbdoctor_allegro close  
+#setwindow pcb
+# ... End of C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_End.scr
+create symbol
+fillin "32A"
+setwindow pcb
+trapsize 503
+dbdoctor
+setwindow Form.dbdoctor_allegro
+FORM dbdoctor_allegro drc YES
+FORM dbdoctor_allegro shapes YES
+FORM dbdoctor_allegro execute
+setwindow pcb
+save_as 
+fillin "32A"
+setwindow pcb
+
+
+# **************************New Pattern starts here************************
+version 14.0
+
+setwindow pcb
+open
+fillin "blank_drawing.dra"
+drawing param
+setwindow Form.drawing
+FORM drawing type Package
+FORM drawing units Mils
+FORM drawing size Other
+FORM drawing accuracy 4
+FORM drawing width 2483.85
+FORM drawing height 2616.17
+FORM drawing x 0.00
+FORM drawing y 0.00
+FORM drawing move_x 1244.76
+FORM drawing move_y 1244.09
+FORM drawing done
+setwindow pcb
+status
+setwindow form.status
+FORM status lock_direction Off
+FORM status lock_mode line
+FORM status symbol_mirror NO
+FORM status drawing_size
+FORM status done
+setwindow pcb
+window center; pick     0.0     0.0
+# Starting C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_Start.scr...
+#
+# Allegro Footprint User-Initialization Script
+#
+# A place to put custom (user-definable) things that need to be done before adding data into a new footprint.
+#
+# ... End of C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_Start.scr
+
+define subclass
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SILKSCREEN_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERPASTE_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETR pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERMASK_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_BOTTOM
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERMASK_BOTTOM
+setwindow form.subclass
+FORM subclass PIN pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PASTEMASK_BOTTOM
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SILKSCREEN_BOTTOM
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_BOTTOM
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name OUTLINE
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_TOP
+setwindow form.subclass
+FORM subclass REF_DES pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass USER_PART_NUMBER pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass DEVICE_TYPE pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass TOLERANCE pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass COMPONENT_VALUE pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_BOTTOM
+setwindow form.subclass
+FORM subclass MANUFACTURING pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name NO_PROBE_TOP
+setwindow form.subclass
+FORM subclass MANUFACTURING pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name NO_PROBE_BOTTOM
+setwindow form.subclass
+FORM subclass CONSTRAINT_REGION pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ALL
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name CUTOUTSLOTS
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DIEBONDPADS
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name WIREBONDS
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PIN
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_DETAIL
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name OUTLINE
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name COPY RIGHT
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name OUTLINE
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DFA_BOUND_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERPASTE_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name NPH_MTG_HOLE
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name METADATA
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DESIGNER_NOTES
+setwindow form.subclass
+FORM subclass CONSTRAINT_REGION pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name K_DOT
+setwindow form.subclass
+FORM subclass PIN pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name FILMMASKTOP
+setwindow form.subclass
+FORM subclass PIN pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name FILMMASKBOTTOM
+FORM subclass done
+
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 1
+setwindow pcb
+pick -169.32 110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 2
+setwindow pcb
+pick -169.32 78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 3
+setwindow pcb
+pick -169.32 47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 4
+setwindow pcb
+pick -169.32 15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 5
+setwindow pcb
+pick -169.32 -15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 6
+setwindow pcb
+pick -169.32 -47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 7
+setwindow pcb
+pick -169.32 -78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 8
+setwindow pcb
+pick -169.32 -110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 9
+setwindow pcb
+pick -110.24 -169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 10
+setwindow pcb
+pick -78.74 -169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 11
+setwindow pcb
+pick -47.24 -169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 12
+setwindow pcb
+pick -15.75 -169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 13
+setwindow pcb
+pick 15.75 -169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 14
+setwindow pcb
+pick 47.24 -169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 15
+setwindow pcb
+pick 78.74 -169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 16
+setwindow pcb
+pick 110.24 -169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 17
+setwindow pcb
+pick 169.32 -110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 18
+setwindow pcb
+pick 169.32 -78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 19
+setwindow pcb
+pick 169.32 -47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 20
+setwindow pcb
+pick 169.32 -15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 21
+setwindow pcb
+pick 169.32 15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 22
+setwindow pcb
+pick 169.32 47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 23
+setwindow pcb
+pick 169.32 78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 24
+setwindow pcb
+pick 169.32 110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 25
+setwindow pcb
+pick 110.24 169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 26
+setwindow pcb
+pick 78.74 169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 27
+setwindow pcb
+pick 47.24 169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 28
+setwindow pcb
+pick 15.75 169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 29
+setwindow pcb
+pick -15.75 169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 30
+setwindow pcb
+pick -47.24 169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 31
+setwindow pcb
+pick -78.74 169.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX21p72Y69p53D0T
+setwindow form.mini
+FORM mini next_pin_number 32
+setwindow pcb
+pick -110.24 169.32
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -86.2 -214.1
+pick -86.2 -224.1
+pick -71.2 -224.1
+pick -71.2 -214.1
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick 224.1 -8.2
+pick 224.1 -23.2
+pick 214.1 -23.2
+pick 214.1 -8.2
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -54.7 214.1
+pick -54.7 224.1
+pick -39.7 224.1
+pick -39.7 214.1
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass PLACE_BOUND_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -159.8 -159.8
+pick -159.8 -141.1
+pick -224.1 -141.1
+pick -224.1 141.1
+pick -159.8 141.1
+pick -159.8 159.8
+pick -141.1 159.8
+pick -141.1 224.1
+pick 141.1 224.1
+pick 141.1 159.8
+pick 159.8 159.8
+pick 159.8 141.1
+pick 224.1 141.1
+pick 224.1 -141.1
+pick 159.8 -141.1
+pick 159.8 -159.8
+pick 141.1 -159.8
+pick 141.1 -224.1
+pick -141.1 -224.1
+pick -141.1 -159.8
+done
+property edit
+setwindow Form.Find
+FORM find all_off
+FORM find shapes YES
+setwindow pcb
+pick grid -159.8 -159.8
+setwindow Form.editprop1
+FORM editprop1 properties PACKAGE_HEIGHT_MAX
+setwindow Form.editprop2
+FORM editprop2 package_height_max ele_prop_value 47
+FORM editprop2 apply
+setwindow Form.editprop1
+FORM editprop1 done
+setwindow Form.Find
+FORM find all_on
+property edit
+setwindow Form.Find
+FORM find all_off
+FORM find shapes YES
+setwindow pcb
+pick grid -159.8 -159.8
+setwindow Form.editprop1
+FORM editprop1 properties PACKAGE_HEIGHT_MIN
+setwindow Form.editprop2
+FORM editprop2 package_height_min ele_prop_value 10
+FORM editprop2 apply
+setwindow Form.editprop1
+FORM editprop1 done
+setwindow Form.Find
+FORM find all_on
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class MANUFACTURING
+FORM mini subclass NO_PROBE_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -239.1 -239.1
+pick -239.1 239.1
+pick 239.1 239.1
+pick 239.1 -239.1
+done
+setwindow pcb
+add text
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass PLACE_BOUND_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "47.24409"
+setwindow pcb
+label refdes
+setwindow form.mini
+FORM mini class REF DES
+FORM mini subclass SILKSCREEN_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "REF"
+setwindow pcb
+setwindow pcb
+label refdes
+setwindow form.mini
+FORM mini class REF DES
+FORM mini subclass ASSEMBLY_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "REF"
+setwindow pcb
+setwindow pcb
+label device
+setwindow form.mini
+FORM mini class DEVICE TYPE
+FORM mini subclass ASSEMBLY_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "32A-M"
+setwindow pcb
+setwindow pcb
+add text
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick -229.1 116
+text "*"
+setwindow pcb
+add text
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick -124.8 101
+text "*"
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 139.8
+pick 119.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 139.8
+pick 119.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 182.1
+pick 101.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 182.1
+pick 101.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 139.8
+pick 87.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 139.8
+pick 87.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 182.1
+pick 69.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 182.1
+pick 69.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 139.8
+pick 56.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 139.8
+pick 56.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 182.1
+pick 38.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 182.1
+pick 38.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 139.8
+pick 24.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 139.8
+pick 24.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 182.1
+pick 6.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 182.1
+pick 6.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 139.8
+pick -6.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 139.8
+pick -6.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 182.1
+pick -24.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 182.1
+pick -24.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 139.8
+pick -38.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 139.8
+pick -38.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 182.1
+pick -56.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 182.1
+pick -56.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 139.8
+pick -69.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 139.8
+pick -69.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 182.1
+pick -87.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 182.1
+pick -87.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 139.8
+pick -101.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 139.8
+pick -101.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 182.1
+pick -119.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 182.1
+pick -119.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 101.4
+pick -139.8 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 119.1
+pick -182.1 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 119.1
+pick -182.1 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 101.4
+pick -139.8 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 69.9
+pick -139.8 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 87.6
+pick -182.1 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 87.6
+pick -182.1 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 69.9
+pick -139.8 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 38.4
+pick -139.8 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 56.1
+pick -182.1 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 56.1
+pick -182.1 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 38.4
+pick -139.8 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 6.9
+pick -139.8 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 24.6
+pick -182.1 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 24.6
+pick -182.1 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 6.9
+pick -139.8 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -24.6
+pick -139.8 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -6.9
+pick -182.1 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -6.9
+pick -182.1 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -24.6
+pick -139.8 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -56.1
+pick -139.8 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -38.4
+pick -182.1 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -38.4
+pick -182.1 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -56.1
+pick -139.8 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -87.6
+pick -139.8 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -69.9
+pick -182.1 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -69.9
+pick -182.1 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -87.6
+pick -139.8 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -119.1
+pick -139.8 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -101.4
+pick -182.1 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -101.4
+pick -182.1 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -119.1
+pick -139.8 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 -139.8
+pick -119.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 -139.8
+pick -119.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 -182.1
+pick -101.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 -182.1
+pick -101.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 -139.8
+pick -87.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 -139.8
+pick -87.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 -182.1
+pick -69.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 -182.1
+pick -69.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 -139.8
+pick -56.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 -139.8
+pick -56.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 -182.1
+pick -38.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 -182.1
+pick -38.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 -139.8
+pick -24.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 -139.8
+pick -24.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 -182.1
+pick -6.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 -182.1
+pick -6.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 -139.8
+pick 6.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 -139.8
+pick 6.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 -182.1
+pick 24.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 -182.1
+pick 24.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 -139.8
+pick 38.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 -139.8
+pick 38.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 -182.1
+pick 56.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 -182.1
+pick 56.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 -139.8
+pick 69.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 -139.8
+pick 69.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 -182.1
+pick 87.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 -182.1
+pick 87.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 -139.8
+pick 101.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 -139.8
+pick 101.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 -182.1
+pick 119.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 -182.1
+pick 119.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -101.4
+pick 139.8 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -119.1
+pick 182.1 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -119.1
+pick 182.1 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -101.4
+pick 139.8 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -69.9
+pick 139.8 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -87.6
+pick 182.1 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -87.6
+pick 182.1 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -69.9
+pick 139.8 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -38.4
+pick 139.8 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -56.1
+pick 182.1 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -56.1
+pick 182.1 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -38.4
+pick 139.8 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -6.9
+pick 139.8 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -24.6
+pick 182.1 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -24.6
+pick 182.1 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -6.9
+pick 139.8 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 24.6
+pick 139.8 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 6.9
+pick 182.1 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 6.9
+pick 182.1 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 24.6
+pick 139.8 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 56.1
+pick 139.8 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 38.4
+pick 182.1 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 38.4
+pick 182.1 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 56.1
+pick 139.8 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 87.6
+pick 139.8 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 69.9
+pick 182.1 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 69.9
+pick 182.1 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 87.6
+pick 139.8 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 119.1
+pick 139.8 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 101.4
+pick 182.1 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 101.4
+pick 182.1 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 119.1
+pick 139.8 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 89.8
+pick -89.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -144.8 -144.8
+pick -134.2 -144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 144.8 -144.8
+pick 144.8 -134.2
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 144.8 144.8
+pick 134.2 144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -144.8 144.8
+pick -144.8 134.2
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -144.8 -134.2
+pick -144.8 -144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -139.8
+pick 139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -139.8
+pick 139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -139.8
+pick 139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 139.8
+pick 139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 139.8
+pick -139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 139.8
+pick -139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 139.8
+pick -139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -139.8
+pick -139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 134.2 -144.8
+pick 144.8 -144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 144.8 134.2
+pick 144.8 144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -134.2 144.8
+pick -144.8 144.8
+done
+# Starting C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_End.scr...
+#
+# Allegro Footprint User-Customization Script
+#
+# A place to put custom (user-definable) things that need to be done after adding data to a new footprint, before it is saved.
+#
+# change database units to millimeters
+
+
+#setwindow pcb
+#drawing param 
+#setwindow form.drawing
+#FORM drawing units Millimeter 
+#FORM drawing done  
+#setwindow pcb
+#trapsize 1742
+# allegro recommends running a db check after changing the units of measure
+#dbdoctor 
+#setwindow form.dbdoctor_allegro
+#FORM dbdoctor_allegro drc YES 
+#FORM dbdoctor_allegro shapes YES 
+#FORM dbdoctor_allegro execute  
+#FORM dbdoctor_allegro close  
+#setwindow pcb
+# ... End of C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_End.scr
+create symbol
+fillin "32A-M"
+setwindow pcb
+trapsize 503
+dbdoctor
+setwindow Form.dbdoctor_allegro
+FORM dbdoctor_allegro drc YES
+FORM dbdoctor_allegro shapes YES
+FORM dbdoctor_allegro execute
+setwindow pcb
+save_as 
+fillin "32A-M"
+setwindow pcb
+
+
+# **************************New Pattern starts here************************
+version 14.0
+
+setwindow pcb
+open
+fillin "blank_drawing.dra"
+drawing param
+setwindow Form.drawing
+FORM drawing type Package
+FORM drawing units Mils
+FORM drawing size Other
+FORM drawing accuracy 4
+FORM drawing width 2489.53
+FORM drawing height 2608.17
+FORM drawing x 0.00
+FORM drawing y 0.00
+FORM drawing move_x 1244.76
+FORM drawing move_y 1240.09
+FORM drawing done
+setwindow pcb
+status
+setwindow form.status
+FORM status lock_direction Off
+FORM status lock_mode line
+FORM status symbol_mirror NO
+FORM status drawing_size
+FORM status done
+setwindow pcb
+window center; pick     0.0     0.0
+# Starting C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_Start.scr...
+#
+# Allegro Footprint User-Initialization Script
+#
+# A place to put custom (user-definable) things that need to be done before adding data into a new footprint.
+#
+# ... End of C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_Start.scr
+
+define subclass
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SILKSCREEN_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERPASTE_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETR pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERMASK_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_BOTTOM
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERMASK_BOTTOM
+setwindow form.subclass
+FORM subclass PIN pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PASTEMASK_BOTTOM
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SILKSCREEN_BOTTOM
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_BOTTOM
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name OUTLINE
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_TOP
+setwindow form.subclass
+FORM subclass REF_DES pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass USER_PART_NUMBER pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass DEVICE_TYPE pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass TOLERANCE pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass COMPONENT_VALUE pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DISPLAY_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PLACE_BOUND_BOTTOM
+setwindow form.subclass
+FORM subclass MANUFACTURING pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name NO_PROBE_TOP
+setwindow form.subclass
+FORM subclass MANUFACTURING pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name NO_PROBE_BOTTOM
+setwindow form.subclass
+FORM subclass CONSTRAINT_REGION pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ALL
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name CUTOUTSLOTS
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DIEBONDPADS
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name WIREBONDS
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name PIN
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_DETAIL
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name OUTLINE
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name COPY RIGHT
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name OUTLINE
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass BOARD_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name ASSEMBLY_NOTES
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DFA_BOUND_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name SOLDERPASTE_TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name NPH_MTG_HOLE
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name METADATA
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name DESIGNER_NOTES
+setwindow form.subclass
+FORM subclass CONSTRAINT_REGION pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name TOP
+setwindow form.subclass
+FORM subclass PACKAGE_GEOMETRY pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name K_DOT
+setwindow form.subclass
+FORM subclass PIN pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name FILMMASKTOP
+setwindow form.subclass
+FORM subclass PIN pick
+setwindow form.subclass_nonetch
+FORM subclass_nonetch name FILMMASKBOTTOM
+FORM subclass done
+
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 1
+setwindow pcb
+pick -165.32 110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 2
+setwindow pcb
+pick -165.32 78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 3
+setwindow pcb
+pick -165.32 47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 4
+setwindow pcb
+pick -165.32 15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 5
+setwindow pcb
+pick -165.32 -15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 6
+setwindow pcb
+pick -165.32 -47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 7
+setwindow pcb
+pick -165.32 -78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 8
+setwindow pcb
+pick -165.32 -110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 9
+setwindow pcb
+pick -110.24 -165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 10
+setwindow pcb
+pick -78.74 -165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 11
+setwindow pcb
+pick -47.24 -165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 12
+setwindow pcb
+pick -15.75 -165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 13
+setwindow pcb
+pick 15.75 -165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 14
+setwindow pcb
+pick 47.24 -165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 15
+setwindow pcb
+pick 78.74 -165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 16
+setwindow pcb
+pick 110.24 -165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 17
+setwindow pcb
+pick 165.32 -110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 18
+setwindow pcb
+pick 165.32 -78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 19
+setwindow pcb
+pick 165.32 -47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 20
+setwindow pcb
+pick 165.32 -15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 21
+setwindow pcb
+pick 165.32 15.75
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 22
+setwindow pcb
+pick 165.32 47.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 23
+setwindow pcb
+pick 165.32 78.74
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 270
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 24
+setwindow pcb
+pick 165.32 110.24
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 25
+setwindow pcb
+pick 110.24 165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 26
+setwindow pcb
+pick 78.74 165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 27
+setwindow pcb
+pick 47.24 165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 28
+setwindow pcb
+pick 15.75 165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 29
+setwindow pcb
+pick -15.75 165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 30
+setwindow pcb
+pick -47.24 165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 31
+setwindow pcb
+pick -78.74 165.32
+done
+add pin
+setwindow form.mini
+FORM mini offsetx 0.00
+FORM mini offsety 0.00
+FORM mini rotate_pin 180
+add pin
+setwindow form.mini
+FORM mini pad_name RX17p72Y45p53D0T
+setwindow form.mini
+FORM mini next_pin_number 32
+setwindow pcb
+pick -110.24 165.32
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -86.2 -198.1
+pick -86.2 -208.1
+pick -71.2 -208.1
+pick -71.2 -198.1
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick 208.1 -8.2
+pick 208.1 -23.2
+pick 198.1 -23.2
+pick 198.1 -8.2
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -54.7 198.1
+pick -54.7 208.1
+pick -39.7 208.1
+pick -39.7 198.1
+done
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass PLACE_BOUND_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -143.8 -143.8
+pick -143.8 -123.1
+pick -192.1 -123.1
+pick -192.1 123.1
+pick -143.8 123.1
+pick -143.8 143.8
+pick -123.1 143.8
+pick -123.1 192.1
+pick 123.1 192.1
+pick 123.1 143.8
+pick 143.8 143.8
+pick 143.8 123.1
+pick 192.1 123.1
+pick 192.1 -123.1
+pick 143.8 -123.1
+pick 143.8 -143.8
+pick 123.1 -143.8
+pick 123.1 -192.1
+pick -123.1 -192.1
+pick -123.1 -143.8
+done
+property edit
+setwindow Form.Find
+FORM find all_off
+FORM find shapes YES
+setwindow pcb
+pick grid -143.8 -143.8
+setwindow Form.editprop1
+FORM editprop1 properties PACKAGE_HEIGHT_MAX
+setwindow Form.editprop2
+FORM editprop2 package_height_max ele_prop_value 47
+FORM editprop2 apply
+setwindow Form.editprop1
+FORM editprop1 done
+setwindow Form.Find
+FORM find all_on
+property edit
+setwindow Form.Find
+FORM find all_off
+FORM find shapes YES
+setwindow pcb
+pick grid -143.8 -143.8
+setwindow Form.editprop1
+FORM editprop1 properties PACKAGE_HEIGHT_MIN
+setwindow Form.editprop2
+FORM editprop2 package_height_min ele_prop_value 10
+FORM editprop2 apply
+setwindow Form.editprop1
+FORM editprop1 done
+setwindow Form.Find
+FORM find all_on
+setwindow pcb
+add fshape
+setwindow form.mini
+FORM mini class MANUFACTURING
+FORM mini subclass NO_PROBE_TOP
+FORM mini dyns_grid None
+FORM mini dyns_lock_mode Line
+setwindow pcb
+pick -207.1 -207.1
+pick -207.1 207.1
+pick 207.1 207.1
+pick 207.1 -207.1
+done
+setwindow pcb
+add text
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass PLACE_BOUND_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "47.24409"
+setwindow pcb
+label refdes
+setwindow form.mini
+FORM mini class REF DES
+FORM mini subclass SILKSCREEN_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "REF"
+setwindow pcb
+setwindow pcb
+label refdes
+setwindow form.mini
+FORM mini class REF DES
+FORM mini subclass ASSEMBLY_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "REF"
+setwindow pcb
+setwindow pcb
+label device
+setwindow form.mini
+FORM mini class DEVICE TYPE
+FORM mini subclass ASSEMBLY_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick 0 -25
+text "32A-L"
+setwindow pcb
+setwindow pcb
+add text
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick -213.1 116
+text "*"
+setwindow pcb
+add text
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+FORM mini text_block 3
+FORM mini text_justification Center
+FORM mini angle 0
+FORM mini mirror NO
+setwindow pcb
+pick -124.8 101
+text "*"
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 139.8
+pick 119.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 139.8
+pick 119.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 182.1
+pick 101.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 182.1
+pick 101.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 139.8
+pick 87.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 139.8
+pick 87.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 182.1
+pick 69.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 182.1
+pick 69.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 139.8
+pick 56.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 139.8
+pick 56.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 182.1
+pick 38.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 182.1
+pick 38.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 139.8
+pick 24.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 139.8
+pick 24.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 182.1
+pick 6.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 182.1
+pick 6.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 139.8
+pick -6.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 139.8
+pick -6.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 182.1
+pick -24.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 182.1
+pick -24.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 139.8
+pick -38.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 139.8
+pick -38.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 182.1
+pick -56.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 182.1
+pick -56.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 139.8
+pick -69.9 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 139.8
+pick -69.9 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 182.1
+pick -87.6 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 182.1
+pick -87.6 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 139.8
+pick -101.4 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 139.8
+pick -101.4 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 182.1
+pick -119.1 182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 182.1
+pick -119.1 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 101.4
+pick -139.8 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 119.1
+pick -182.1 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 119.1
+pick -182.1 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 101.4
+pick -139.8 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 69.9
+pick -139.8 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 87.6
+pick -182.1 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 87.6
+pick -182.1 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 69.9
+pick -139.8 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 38.4
+pick -139.8 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 56.1
+pick -182.1 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 56.1
+pick -182.1 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 38.4
+pick -139.8 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 6.9
+pick -139.8 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 24.6
+pick -182.1 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 24.6
+pick -182.1 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 6.9
+pick -139.8 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -24.6
+pick -139.8 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -6.9
+pick -182.1 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -6.9
+pick -182.1 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -24.6
+pick -139.8 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -56.1
+pick -139.8 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -38.4
+pick -182.1 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -38.4
+pick -182.1 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -56.1
+pick -139.8 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -87.6
+pick -139.8 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -69.9
+pick -182.1 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -69.9
+pick -182.1 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -87.6
+pick -139.8 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -119.1
+pick -139.8 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -101.4
+pick -182.1 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -101.4
+pick -182.1 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -182.1 -119.1
+pick -139.8 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 -139.8
+pick -119.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 -139.8
+pick -119.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -119.1 -182.1
+pick -101.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -101.4 -182.1
+pick -101.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 -139.8
+pick -87.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 -139.8
+pick -87.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -87.6 -182.1
+pick -69.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -69.9 -182.1
+pick -69.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 -139.8
+pick -56.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 -139.8
+pick -56.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -56.1 -182.1
+pick -38.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -38.4 -182.1
+pick -38.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 -139.8
+pick -24.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 -139.8
+pick -24.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -24.6 -182.1
+pick -6.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -6.9 -182.1
+pick -6.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 -139.8
+pick 6.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 -139.8
+pick 6.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 6.9 -182.1
+pick 24.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 24.6 -182.1
+pick 24.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 -139.8
+pick 38.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 -139.8
+pick 38.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 38.4 -182.1
+pick 56.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 56.1 -182.1
+pick 56.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 -139.8
+pick 69.9 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 -139.8
+pick 69.9 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 69.9 -182.1
+pick 87.6 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 87.6 -182.1
+pick 87.6 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 -139.8
+pick 101.4 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 -139.8
+pick 101.4 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 101.4 -182.1
+pick 119.1 -182.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 119.1 -182.1
+pick 119.1 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -101.4
+pick 139.8 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -119.1
+pick 182.1 -119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -119.1
+pick 182.1 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -101.4
+pick 139.8 -101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -69.9
+pick 139.8 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -87.6
+pick 182.1 -87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -87.6
+pick 182.1 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -69.9
+pick 139.8 -69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -38.4
+pick 139.8 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -56.1
+pick 182.1 -56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -56.1
+pick 182.1 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -38.4
+pick 139.8 -38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -6.9
+pick 139.8 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -24.6
+pick 182.1 -24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -24.6
+pick 182.1 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 -6.9
+pick 139.8 -6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 24.6
+pick 139.8 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 6.9
+pick 182.1 6.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 6.9
+pick 182.1 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 24.6
+pick 139.8 24.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 56.1
+pick 139.8 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 38.4
+pick 182.1 38.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 38.4
+pick 182.1 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 56.1
+pick 139.8 56.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 87.6
+pick 139.8 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 69.9
+pick 182.1 69.9
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 69.9
+pick 182.1 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 87.6
+pick 139.8 87.6
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 119.1
+pick 139.8 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 101.4
+pick 182.1 101.4
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 101.4
+pick 182.1 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 182.1 119.1
+pick 139.8 119.1
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 89.8
+pick -89.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -144.8 -144.8
+pick -132.2 -144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 144.8 -144.8
+pick 144.8 -132.2
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 144.8 144.8
+pick 132.2 144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -144.8 144.8
+pick -144.8 132.2
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -144.8 -132.2
+pick -144.8 -144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -139.8
+pick 139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -139.8
+pick 139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 -139.8
+pick 139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 139.8
+pick 139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick 139.8 139.8
+pick -139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 139.8
+pick -139.8 139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 139.8
+pick -139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass ASSEMBLY_TOP
+setwindow form.mini
+FORM mini line_width 0
+FORM mini lock_direction Off 
+setwindow pcb
+pick -139.8 -139.8
+pick -139.8 -139.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 132.2 -144.8
+pick 144.8 -144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick 144.8 132.2
+pick 144.8 144.8
+done
+add line
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY
+FORM mini subclass SILKSCREEN_TOP
+setwindow form.mini
+FORM mini line_width 6
+FORM mini lock_direction Off 
+setwindow pcb
+pick -132.2 144.8
+pick -144.8 144.8
+done
+# Starting C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_End.scr...
+#
+# Allegro Footprint User-Customization Script
+#
+# A place to put custom (user-definable) things that need to be done after adding data to a new footprint, before it is saved.
+#
+# change database units to millimeters
+
+
+#setwindow pcb
+#drawing param 
+#setwindow form.drawing
+#FORM drawing units Millimeter 
+#FORM drawing done  
+#setwindow pcb
+#trapsize 1742
+# allegro recommends running a db check after changing the units of measure
+#dbdoctor 
+#setwindow form.dbdoctor_allegro
+#FORM dbdoctor_allegro drc YES 
+#FORM dbdoctor_allegro shapes YES 
+#FORM dbdoctor_allegro execute  
+#FORM dbdoctor_allegro close  
+#setwindow pcb
+# ... End of C:\UltraLibrarian\CadInfos\allegro15.2\Allegro_FP_End.scr
+create symbol
+fillin "32A-L"
+setwindow pcb
+trapsize 503
+dbdoctor
+setwindow Form.dbdoctor_allegro
+FORM dbdoctor_allegro drc YES
+FORM dbdoctor_allegro shapes YES
+FORM dbdoctor_allegro execute
+setwindow pcb
+save_as 
+fillin "32A-L"
+setwindow pcb
+exit 

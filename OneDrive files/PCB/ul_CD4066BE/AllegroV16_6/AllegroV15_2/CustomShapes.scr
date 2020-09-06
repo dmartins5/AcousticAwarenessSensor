@@ -1,0 +1,47 @@
+# Allegro Script file created by :
+# Ultra Librarian Gold 8.3.215 Copyright © 1999-2018 EMA Design Automation
+# http://www.UltraLibrarian.com
+ 
+# Registered to :
+# Frank Frank
+# 
+ 
+ 
+version 14.0
+enved
+setwindow Form.prfedit
+FORM prfedit noconfirm YES
+FORM prfedit done
+ 
+setwindow pcb
+#################### New Flash : ths41x51x45x10 ##################
+new
+newdrawfillin "ths41x51x45x10.dra" "Flash Symbol"
+drawing param
+setwindow Form.drawing
+FORM drawing type Flash
+FORM drawing units Mils
+FORM drawing size Other
+FORM drawing accuracy 4
+FORM drawing width 122
+FORM drawing height 122
+FORM drawing x 0.00
+FORM drawing y 0.00
+FORM drawing move_x 61
+FORM drawing move_y 61
+FORM drawing done
+setwindow pcb
+Add Flash
+setwindow Form.thermflash
+FORM thermflash indiam 41
+FORM thermflash outdia 51
+FORM thermflash spkwdth 10
+FORM thermflash spknum 4
+FORM thermflash spkangl 45
+FORM thermflash done
+setwindow pcb
+Create Symbol
+fillin "ths41x51x45x10.fsm"
+save
+
+exit

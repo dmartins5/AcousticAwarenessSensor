@@ -1,0 +1,13 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ATMEGA328PB_AU'
+CLASS = IC
+
+{========================================================================================}
+:PACK_TYPE | VALUE = MANUFACTURER_PART_NUMBER | VENDOR | PART_NUMBER | JEDEC_TYPE | BUILT_BY | COPYRIGHT ;
+{========================================================================================}
+ 'SMD' | 'ATMEGA328PB-AU'(!) = 'ATMEGA328PB-AU' | 'Microchip' | 'ATMEGA328PB-AU' | '32A' | 'EMA_Molly' | 'Copyright (C) 2018 Accelerated Designs. All rights reserved'
+
+END_PART
+
+END.

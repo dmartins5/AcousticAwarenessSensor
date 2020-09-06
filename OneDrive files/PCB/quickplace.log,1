@@ -1,0 +1,58 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    QUICKPLACE LOG                                                   )
+(                                                                     )
+(    Drawing          : ece457.1.brd                                  )
+(    Software Version : 17.2S038                                      )
+(    Date/Time        : Sat Nov 30 19:11:31 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+State: Placing on layer TOP
+
+ERROR:   Could not find symbol:  U1 / ATMEGA328PB-AUR_32A_ATMEGA328PB / 32A
+ERROR:   Could not find symbol:  U2 / CD4066BE_N14_CD4066BE / N14
+ERROR:   Cannot place symbol:  U9 / 1437_DIP8_3_1437 / DIP8_3
+         due to ERROR(SPMHGE-82): Pin numbers do not match between symbol and component. Run dev_check on device file for more information.
+         Placed symbol:  C1 / C_CAP196_1U / CAP196 at (-1174.00 1008.00)
+         Placed symbol:  R6 / R_AXRC05_2.2K / AXRC05 at (-1018.50 999.50)
+         Placed symbol:  R9 / R_AXRC05_4.7K / AXRC05 at (-635.50 999.50)
+         Placed symbol:  R13 / R_AXRC05_4.7K / AXRC05 at (-252.50 999.50)
+         Placed symbol:  R12 / R_AXRC05_4.7K / AXRC05 at (130.50 999.50)
+         Placed symbol:  R11 / R_AXRC05_4.7K / AXRC05 at (513.50 999.50)
+         Placed symbol:  R10 / R_AXRC05_4.7K / AXRC05 at (896.50 999.50)
+         Placed symbol:  R8 / R_AXRC05_RF / AXRC05 at (1279.50 999.50)
+         Placed symbol:  R7 / R_AXRC05_RS / AXRC05 at (-1654.50 1407.50)
+         Placed symbol:  J20 / CON1_JUMPER1_CON1 / JUMPER1 at (-1236.00 1416.00)
+         Placed symbol:  J22 / CON1_JUMPER1_CON1 / JUMPER1 at (-1105.00 1416.00)
+         Placed symbol:  J21 / CON1_JUMPER1_CON1 / JUMPER1 at (-974.00 1416.00)
+         Placed symbol:  J23 / CON1_JUMPER1_CON1 / JUMPER1 at (-843.00 1416.00)
+         Placed symbol:  J25 / CON1_JUMPER1_CON1 / JUMPER1 at (-712.00 1416.00)
+         Placed symbol:  J26 / CON1_JUMPER1_CON1 / JUMPER1 at (-581.00 1416.00)
+         Placed symbol:  J19 / CON1_JUMPER1_CON1 / JUMPER1 at (-450.00 1416.00)
+         Placed symbol:  J24 / CON1_JUMPER1_CON1 / JUMPER1 at (-319.00 1416.00)
+         Placed symbol:  J29 / CON1_JUMPER1_CON1 / JUMPER1 at (-188.00 1416.00)
+         Placed symbol:  J27 / CON1_JUMPER1_CON1 / JUMPER1 at (-57.00 1416.00)
+         Placed symbol:  J31 / CON1_JUMPER1_CON1 / JUMPER1 at (74.00 1416.00)
+         Placed symbol:  J32 / CON1_JUMPER1_CON1 / JUMPER1 at (205.00 1416.00)
+         Placed symbol:  J7 / CON1_JUMPER1_CON1 / JUMPER1 at (336.00 1416.00)
+         Placed symbol:  J8 / CON1_JUMPER1_CON1 / JUMPER1 at (467.00 1416.00)
+         Placed symbol:  J9 / CON1_JUMPER1_CON1 / JUMPER1 at (598.00 1416.00)
+         Placed symbol:  J18 / CON1_JUMPER1_CON1 / JUMPER1 at (729.00 1416.00)
+         Placed symbol:  J17 / CON1_JUMPER1_CON1 / JUMPER1 at (860.00 1416.00)
+         Placed symbol:  J16 / CON1_JUMPER1_CON1 / JUMPER1 at (991.00 1416.00)
+         Placed symbol:  J15 / CON1_JUMPER1_CON1 / JUMPER1 at (1122.00 1416.00)
+         Placed symbol:  J14 / CON1_JUMPER1_CON1 / JUMPER1 at (1253.00 1416.00)
+         Placed symbol:  J12 / CON1_JUMPER1_CON1 / JUMPER1 at (1384.00 1416.00)
+         Placed symbol:  J13 / CON1_JUMPER1_CON1 / JUMPER1 at (1515.00 1416.00)
+         Placed symbol:  J30 / CON1_JUMPER1_CON1 / JUMPER1 at (1646.00 1416.00)
+         Placed symbol:  J11 / CON1_JUMPER1_CON1 / JUMPER1 at (-1619.00 1524.00)
+         Placed symbol:  J10 / CON1_JUMPER1_CON1 / JUMPER1 at (-1488.00 1524.00)
+         Placed symbol:  J28 / CON1_JUMPER1_CON1 / JUMPER1 at (-1357.00 1524.00)
+
+
+Placed 35 of 38 applicable (38 total) symbols.
+
+-----------------------------------------------------------------------
+

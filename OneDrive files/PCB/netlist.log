@@ -1,0 +1,13 @@
+{ Using PSTWRITER 17.2.0 d001Dec-02-2019 at 12:52:37 }
+
+#1 WARNING(ORCAP-36006): Part Name "ATMEGA328PB-AUR_32A_ATMEGA328PB-AUR" is renamed to "ATMEGA328PB-AUR_32A_ATMEGA328PB".
+INFO(ORCAP-36080): Scanning netlist files ...
+
+Loading... C:\USERS\MICHAEL\ONEDRIVE - UMASS DARTMOUTH\ECE457 DESIGN PROJECT I\..\ece457 design project i/pstchip.dat
+
+Loading... C:\USERS\MICHAEL\ONEDRIVE - UMASS DARTMOUTH\ECE457 DESIGN PROJECT I\..\ece457 design project i/pstchip.dat
+
+Loading... C:\USERS\MICHAEL\ONEDRIVE - UMASS DARTMOUTH\ECE457 DESIGN PROJECT I\..\ece457 design project i/pstxprt.dat
+
+Loading... C:\USERS\MICHAEL\ONEDRIVE - UMASS DARTMOUTH\ECE457 DESIGN PROJECT I\..\ece457 design project i/pstxnet.dat
+packaging the design view...

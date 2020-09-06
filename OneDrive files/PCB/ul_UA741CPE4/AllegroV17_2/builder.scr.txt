@@ -1,0 +1,14 @@
+skill load "C:/Users/Michael/OneDrive - UMASS Dartmouth/ECE457 Design Project I/ul_UA741CPE4/AllegroV17_2/builder.ile" 
+skill changeWorkingDir "C:/Users/Michael/OneDrive - UMASS Dartmouth/ECE457 Design Project I/ul_UA741CPE4/AllegroV17_2" 
+skill LB_createFootprint "C:/Users/Michael/OneDrive - UMASS Dartmouth/ECE457 Design Project I/ul_UA741CPE4/AllegroV17_2/P8.xml" 
+scriptmode +i +n 
+step pkg map 
+setwindow form.pkgmap3d 
+FORM pkgmap3d stplist P8.step 
+FORM pkgmap3d rotation_x 0 
+FORM pkgmap3d save_current 
+FORM pkgmap3d done 
+setwindow pcb 
+save  
+fillin yes 
+exit 

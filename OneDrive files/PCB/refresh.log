@@ -1,0 +1,131 @@
+Sat Nov 30 20:41:32 2019				Page     1
+
+
+ 
+Update Symbols/Modules Logfile
+	Sat Nov 30 20:41:32 2019
+
+------ Module Refresh Messages ------
+
+SUMMARY:    Updated 0 out of 0 modules
+
+------ End Module Messages     ------
+
+
+
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Refresh Symbol                                                   )
+(                                                                     )
+(    Drawing          : ece457.1.brd                                  )
+(    Software Version : 17.2S038                                      )
+(    Date/Time        : Sat Nov 30 20:41:34 2019                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Sat Nov 30 20:41:34 2019				Page     1
+
+
+------ Symbol Refresh Directives ------
+
+Input design  = 'C:/Users/Michael/OneDrive - UMASS Dartmouth/ECE457 Design Project I/ece457.1.brd'
+Output design = ''
+
+Update mechanical symbols              = 'NO'
+Update format symbols                  = 'NO'
+Update package symbols                 = 'NO'
+Update shape/flash symbols             = 'NO'
+Update symbol padstacks                = 'YES'
+Preserve padstacks replaced on pins    = 'YES'
+Reset symbol text and size locations   = 'YES'
+Reset Pin Escapes (fanouts)            = 'YES'
+Ripup Etch                             = 'NO'
+Reset custom drill data                = 'YES'
+Symbol list file                       = 'C:/Users/Michael/AppData/Local/Temp/#Taaaaae19176.tmp'
+
+
+------ Library Paths ------
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/SPB_17.2/share/local/pcb/symbols 
+           C:/Cadence/SPB_17.2/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_17.2/share/pcb/allegrolib/symbols 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/SPB_17.2/share/local/pcb/padstacks 
+           C:/Cadence/SPB_17.2/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_17.2/share/pcb/allegrolib/symbols 
+
+
+------ Symbol Refresh Messages ------
+
+
+
+------ Pad Stack Refresh Messages ------
+
+WARNING(SPMHNI-255): Symbol 'ELAPSED TIME  0:00:01' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'CPU TIME      0:02:28' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'NETREV RUN ON NOV 30 20:25:18 2019' not found (in list file).
+WARNING(SPMHNI-255): Symbol '------ SUMMARY STATISTICS ------' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'PADPATH =  .' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'PSMPATH =  .' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'MODULEPATH =  .' not found (in list file).
+WARNING(SPMHNI-255): Symbol '------ LIBRARY PATHS ------' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'WARNING(SPMHNI-194): SYMBOL 'N14' USED BY REFDES U10 FOR DEVICE 'CD4066BE_N14_CD4066BE' NOT FOUND IN ~
+PSMPATH OR MUST BE "DBDOCTOR"ED.' not found (in list file).
+WARNING(SPMHNI-255): Symbol '#3   WARNING(SPMHNI-192): DEVICE/SYMBOL CHECK WARNING DETECTED. [HELP]' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'WARNING(SPMHNI-194): SYMBOL '32A' USED BY REFDES U11 FOR DEVICE 'ATMEGA328PB-AUR_32A_ATMEGA328PB' NOT~
+ FOUND IN PSMPATH OR MUST BE "DBDOCTOR"ED.' not found (in list file).
+WARNING(SPMHNI-255): Symbol '#2   WARNING(SPMHNI-192): DEVICE/SYMBOL CHECK WARNING DETECTED. [HELP]' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'ERROR(SPMHNI-196): SYMBOL 'DIP8_3' FOR DEVICE '1437_0_DIP8_3_1437' HAS EXTRA PIN '5'.' not found (in ~
+list file).
+WARNING(SPMHNI-255): Symbol 'ERROR(SPMHNI-196): SYMBOL 'DIP8_3' FOR DEVICE '1437_0_DIP8_3_1437' HAS EXTRA PIN '1'.' not found (in ~
+list file).
+WARNING(SPMHNI-255): Symbol '#1   WARNING(SPMHNI-192): DEVICE/SYMBOL CHECK WARNING DETECTED. [HELP]' not found (in list file).
+WARNING(SPMHNI-255): Symbol '------ OVERSIGHTS/WARNINGS/ERRORS ------' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'STARTING TO READ ./PSTXNET.DAT' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'STARTING TO READ ./PSTXPRT.DAT' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'STARTING TO READ ./PSTCHIP.DAT' not found (in list file).
+WARNING(SPMHNI-255): Symbol '------ PREPARING TO READ PST FILES ------' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'CMDLINE: NETREV -$ -I . -Y 1 -H -Q NETREV_CONSTRAINT_REPORT.XML C:/USERS/MICHAEL/ONEDRIVE - UMASS DAR~
+TMOUTH/ECE457 DESIGN PROJECT I/#TAAAAAE09196.TMP' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'NEW DESIGN NAME:             'C:/USERS/MICHAEL/ONEDRIVE - UMASS DARTMOUTH/ECE457 DESIGN PROJECT I/ECE~
+457.1.BRD'' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'OLD DESIGN NAME:             'C:/USERS/MICHAEL/ONEDRIVE - UMASS DARTMOUTH/ECE457 DESIGN PROJECT I/ECE~
+457.1.BRD'' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'DESIGN DIRECTORY:            'C:/USERS/MICHAEL/ONEDRIVE - UMASS DARTMOUTH/ECE457 DESIGN PROJECT I'' n~
+ot found (in list file).
+WARNING(SPMHNI-255): Symbol 'SCHEMATIC DIRECTORY:         '.'' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'DRC UPDATE:                  YES' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'MISSING SYMBOL HAS ERROR:    NO' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'RIPUP SYMBOLS:               ALWAYS' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'RIPUP RETAIN BONDWIRE:       NO' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'RIPUP DELETE FIRST SEGMENT:  NO' not found (in list file).
+WARNING(SPMHNI-255): Symbol 'RIPUP ETCH:                  NO' not found (in list file).
+WARNING(SPMHNI-255): Symbol '------ DIRECTIVES ------------' not found (in list file).
+Sat Nov 30 20:41:34 2019				Page     2
+
+
+WARNING(SPMHNI-255): Symbol '(---------------------------------------------------------------------)' not found (in list file).
+WARNING(SPMHNI-255): Symbol '(                                                                     )' not found (in list file).
+WARNING(SPMHNI-255): Symbol '(    DATE/TIME        : SAT NOV 30 20:25:18 2019                      )' not found (in list file).
+WARNING(SPMHNI-255): Symbol '(    SOFTWARE VERSION : 17.2S038                                      )' not found (in list file).
+WARNING(SPMHNI-255): Symbol '(    DRAWING          : ECE457.1.BRD                                  )' not found (in list file).
+WARNING(SPMHNI-255): Symbol '(                                                                     )' not found (in list file).
+WARNING(SPMHNI-255): Symbol '(    ALLEGRO NETREV IMPORT LOGIC                                      )' not found (in list file).
+WARNING(SPMHNI-255): Symbol '(                                                                     )' not found (in list file).
+WARNING(SPMHNI-255): Symbol '(---------------------------------------------------------------------)' not found (in list file).
+
+
+
+----- Symbol Update Summary ----
+
+Updated symbols: 0 out 0
+    Design updated.
+

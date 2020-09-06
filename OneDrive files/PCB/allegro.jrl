@@ -1,0 +1,136 @@
+\t (00:00:03) allegro 17.2 S038 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Mon Mar 23 18:00:35 2020
+\t (00:00:03)         Host=DESKTOP-8145OOH User=micha Pid=15536 CPUs=4
+\t (00:00:03) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:03) 
+   (00:00:03) Loading axlcore.cxt 
+\t (00:00:03) Opening existing design...
+\i (00:00:06) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged ece457
+\d (00:00:06) Design opened: C:/Users/micha/OD/ECE458 Design Project/PCB/ece457.brd
+\i (00:00:06) trapsize 1610
+\i (00:00:06) trapsize 1648
+\i (00:00:07) trapsize 1610
+\i (00:00:07) trapsize 1610
+\i (00:00:08) shapeedit 
+\i (00:00:09) zoom in 1 
+\i (00:00:09) setwindow pcb
+\i (00:00:09) zoom in 525.49 -1058.35
+\i (00:00:09) trapsize 805
+\i (00:00:10) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in 436.92 -807.13
+\i (00:00:10) trapsize 403
+\i (00:00:10) zoom in 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom in 436.92 -807.13
+\i (00:00:10) trapsize 201
+\i (00:00:10) zoom out 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out 424.84 -807.53
+\i (00:00:10) trapsize 403
+\i (00:00:10) zoom out 1 
+\i (00:00:10) setwindow pcb
+\i (00:00:10) zoom out 415.19 -802.71
+\i (00:00:10) trapsize 805
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out 363.64 -1123.15
+\i (00:00:11) trapsize 1610
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out 350.77 -1148.92
+\i (00:00:11) trapsize 2781
+\i (00:00:11) zoom out 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom out -799.41 1073.62
+\i (00:00:11) trapsize 2781
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in -560.21 122.38
+\i (00:00:11) trapsize 1391
+\i (00:00:11) zoom in 1 
+\i (00:00:11) setwindow pcb
+\i (00:00:11) zoom in -557.42 69.53
+\i (00:00:11) trapsize 695
+\i (00:00:12) zoom out 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom out -514.31 -50.07
+\i (00:00:12) trapsize 1391
+\i (00:00:12) zoom out 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom out -500.40 -55.62
+\i (00:00:12) trapsize 2781
+\i (00:00:12) zoom in 1 
+\i (00:00:12) setwindow pcb
+\i (00:00:12) zoom in -354.39 -472.84
+\i (00:00:12) trapsize 1391
+\i (00:00:13) zoom in 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom in -376.63 -453.37
+\i (00:00:13) trapsize 695
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out -376.63 -453.36
+\i (00:00:14) trapsize 1391
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in 1676.05 -1196.00
+\i (00:00:16) trapsize 695
+\i (00:00:17) zoom out 1 
+\i (00:00:17) setwindow pcb
+\i (00:00:17) zoom out 1078.05 -903.95
+\i (00:00:17) trapsize 1391
+\i (00:00:17) zoom in 1 
+\i (00:00:17) setwindow pcb
+\i (00:00:17) zoom in 449.44 169.67
+\i (00:00:17) trapsize 695
+\i (00:00:18) zoom out 1 
+\i (00:00:18) setwindow pcb
+\i (00:00:18) zoom out 350.70 125.17
+\i (00:00:18) trapsize 1391
+\i (00:01:44) zoom in 1 
+\i (00:01:44) setwindow pcb
+\i (00:01:44) zoom in -906.51 776.02
+\i (00:01:44) trapsize 695
+\i (00:01:45) zoom out 1 
+\i (00:01:45) setwindow pcb
+\i (00:01:45) zoom out -1028.89 527.09
+\i (00:01:45) trapsize 1391
+\i (00:01:45) zoom in 1 
+\i (00:01:45) setwindow pcb
+\i (00:01:45) zoom in -1037.25 540.99
+\i (00:01:45) trapsize 695
+\i (00:01:46) zoom out 1 
+\i (00:01:46) setwindow pcb
+\i (00:01:46) zoom out -1053.94 509.00
+\i (00:01:46) trapsize 1391
+\i (00:01:49) shape add rect 
+\i (00:01:54) pick grid -1757.64 -1001.30
+\t (00:01:54) last pick:  -1758.00 -1001.00
+\i (00:02:04) pick grid 1758.08 1006.89
+\t (00:02:04) last pick:  1758.00 1007.00
+\i (00:02:08) setwindow form.mini
+\i (00:02:08) FORM mini one_click YES 
+\i (00:02:27) setwindow pcb
+\i (00:02:27) next 
+\i (00:28:00) pick grid 3346.27 1207.15
+\t (00:28:00) last pick:  3346.00 1207.00
+\t (00:28:00) last pick:  1758.00 1007.00
+\w (00:28:00) WARNING(SPMHA2-54): Cannot place outside of the drawing extents.
+\i (00:28:00) pick grid 2083.50 1304.50
+\t (00:28:00) last pick:  2084.00 1305.00
+\t (00:28:00) last pick:  1758.00 1007.00
+\w (00:28:00) WARNING(SPMHA2-54): Cannot place outside of the drawing extents.
+\i (00:28:01) pick grid 1146.17 792.72
+\t (00:28:01) last pick:  1146.00 793.00
+\i (00:28:01) pick grid 1669.07 1318.40
+\t (00:28:01) last pick:  1669.00 1318.00
+\i (00:28:03) prepopup -964.93 1382.38
+\i (00:28:04) cancel 
+\i (00:28:05) shapeedit 
+\i (00:28:05) prepopup -522.69 1546.48
+\i (00:28:08) exit 
+\e (00:28:08) Do you want to save the changes you made to ece457.brd?
+\i (00:28:09) fillin no 
+   (00:28:09) Loading apt.cxt 
+\t (00:28:10)     Journal end - Mon Mar 23 18:28:42 2020

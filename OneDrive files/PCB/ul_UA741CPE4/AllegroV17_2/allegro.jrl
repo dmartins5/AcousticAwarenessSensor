@@ -1,0 +1,24 @@
+\t (00:00:03) allegro 17.2 S038 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Sat Nov 30 21:15:53 2019
+\t (00:00:03)         Host=DESKTOP-0PVBPD5 User=Michael Pid=6152 CPUs=4
+\t (00:00:03) CmdLine= C:\Cadence\SPB_17.2\tools\bin\allegro.exe
+\t (00:00:03) 
+   (00:00:03) Loading axlcore.cxt 
+\t (00:00:03) Opening existing design...
+\i (00:00:05) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged P8
+\d (00:00:05) Design opened: C:/Users/Michael/OneDrive - UMASS Dartmouth/ECE457 Design Project I/ul_UA741CPE4/AllegroV17_2/P8.dra
+\i (00:00:05) trapsize 2182
+\i (00:00:06) trapsize 2238
+\i (00:00:06) trapsize 2182
+\i (00:00:06) trapsize 2215
+\i (00:00:06) trapsize 2215
+\i (00:00:07) generaledit 
+\i (00:00:10) open 
+\i (00:00:35) fillin "C:\Users\Michael\OneDrive - UMASS Dartmouth\ECE457 Design Project I\ece457.1.brd"
+\i (00:00:35) cd "C:\Users\Michael\OneDrive - UMASS Dartmouth\ECE457 Design Project I"
+\t (00:00:35) Opening existing design...
+\i (00:00:36) trapsize 2715
+\i (00:00:36) trapsize 2786
+\i (00:00:36) trapsize 2715
+\i (00:00:36) trapsize 2715
+\t (00:00:37)     Journal end - Sat Nov 30 21:16:26 2019

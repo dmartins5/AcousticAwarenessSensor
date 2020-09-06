@@ -1,0 +1,180 @@
+(ExpressProject "ece457_overviewschematic"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [11/20/2019]-[11/30/19]")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\library1.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\ece457_overviewschematic.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (Netlist_TAB "0")
+    ("Create Allegro Netlist" "TRUE")
+    ("Allegro Netlist Directory" "..\ece457 design project i")
+    ("View Allegro Netlist Files" "FALSE")
+    ("Allegro Netlist Create DCF File" "FALSE")
+    ("Update Allegro Board" "FALSE")
+    ("Allegro Netlist Input Board File"
+       "C:\Users\Michael\OneDrive - UMASS Dartmouth\ECE457 Design Project I\ece457.1.brd")
+    ("Allegro Netlist Output Board File" ".\ece457.1.brd")
+    ("Allegro Netlist Remove Etch" "FALSE")
+    ("Allegro Netlist Place Changed Component" "ALWAYS_REPLACE")
+    ("Allegro Netlist Open Board in Allegro" "ORCAD")
+    ("Allegro Setup Backup Versions" "3")
+    ("Allegro Setup Ignore Constraints" "FALSE")
+    ("Allegro Setup Part Type Length" "31")
+    ("Allegro Netlist Combine Property String" "PCB Footprint")
+    ("Allegro Netlist Ignore Fixed Property" "FALSE")
+    ("Allegro Netlist User Defined Property" "FALSE")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Layout"
+    (File ".\ece457.1.brd"
+      (Type "Board File")
+      (OutputBoard ".\ece457.1.brd")
+      (NetListPath "..\ece457 design project i")
+      (ActiveBoard "1")))
+  (Folder "Outputs"
+    (File ".\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (CON3
+      (FullPartName "CON3.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CON2
+      (FullPartName "CON2.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CON15
+      (FullPartName "CON15.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CD4066BE
+      (FullPartName "CD4066BE.Normal")
+      (LibraryName
+         "C:\USERS\MICHAEL\ONEDRIVE - UMASS DARTMOUTH\ECE457 DESIGN PROJECT I\UL_CD4066BE\ORCADCAPTUREXML\2019-11-29_16-52-40.OLB")
+      (DeviceIndex "0"))
+    (UA741CPE4
+      (FullPartName "UA741CPE4.Normal")
+      (LibraryName
+         "C:\USERS\MICHAEL\ONEDRIVE - UMASS DARTMOUTH\ECE457 DESIGN PROJECT I\UL_UA741CPE4\ORCADCAPTUREXML\2019-12-01_02-03-24.OLB")
+      (DeviceIndex "0"))
+    (ATMEGA328PB-AUR
+      (FullPartName "ATMEGA328PB-AUR.Normal")
+      (LibraryName
+         "C:\USERS\MICHAEL\ONEDRIVE - UMASS DARTMOUTH\ECE457 DESIGN PROJECT I\UL_ATMEGA328PBAUR\ORCADCAPTUREXML\2019-11-20_18-34-56.OLB")
+      (DeviceIndex "0"))
+    (CON1
+      (FullPartName "CON1.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (DB9M
+      (FullPartName "DB9M.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "1"))
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (AUX
+      (FullPartName "AUX.Normal")
+      (LibraryName
+         "C:\USERS\MICHAEL\ONEDRIVE - UMASS DARTMOUTH\ECE457 DESIGN PROJECT I\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (button
+      (FullPartName "button.Normal")
+      (LibraryName
+         "C:\USERS\MICHAEL\ONEDRIVE - UMASS DARTMOUTH\ECE457 DESIGN PROJECT I\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (1437
+      (FullPartName "1437.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\OPA.OLB")
+      (DeviceIndex "0"))
+    (mic1
+      (FullPartName "mic1.Normal")
+      (LibraryName
+         "C:\USERS\MICHAEL\ONEDRIVE - UMASS DARTMOUTH\ECE457 DESIGN PROJECT I\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (MPX700/MC
+      (FullPartName "MPX700/MC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\MOTORSEN.OLB")
+      (DeviceIndex "0"))
+    (74AS286
+      (FullPartName "74AS286.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\74AS.OLB")
+      (DeviceIndex "0"))
+    (Sw_tOpen
+      (FullPartName "Sw_tOpen.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0"))
+    (Sw_tClose
+      (FullPartName "Sw_tClose.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0"))
+    (BATTERY
+      (FullPartName "BATTERY.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\SPICE_ELEM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_17.2\tools\capture\library")
+  (MPSSessionName "Michael")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Michael\OneDrive - UMASS Dartmouth\ECE458 Design Project\PCB\ece457_overviewschematic.dsn")
+      (Path "Design Resources"
+         "C:\Users\Michael\OneDrive - UMASS Dartmouth\ECE458 Design Project\PCB\ece457_overviewschematic.dsn"
+         "SCHEMATIC1")
+      (Path "Layout")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Michael\OneDrive - UMASS Dartmouth\ECE458 Design Project\PCB\ece457_overviewschematic.dsn"
+         "SCHEMATIC1" "PAGE3"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 193 0 564"))
+      (Tab 0)))
+  (ISPCBBASICLICENSE "false")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs"))

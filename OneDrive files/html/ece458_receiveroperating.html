@@ -1,0 +1,717 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>ece458_receiveroperating</title><meta name="generator" content="MATLAB 9.7"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-04-18"><meta name="DC.source" content="ece458_receiveroperating.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="comment">%ECE458 - Senior Design</span>
+<span class="comment">%Michael Benker</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%%%% FALSE DETECTION RATES %%%%%%%</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+clf;clear <span class="string">all</span>; clc; close <span class="string">all</span>;
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+samples=10000;
+T_h_begin = 1.5; <span class="comment">%Begin and end for parameter sweep of threshold numbers</span>
+T_h_end = 10;
+T_m_begin = 4;
+T_m_end = 20;
+T_l_begin = 8;
+T_l_end = 30;
+
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%VARIABLES</span>
+Ave2sec = 0;    <span class="comment">%2-second average</span>
+T_high = 4;     <span class="comment">%standard deviations for high sensitivity setting</span>
+T_med = 8;      <span class="comment">%standard deviations for medium sensitivity setting</span>
+T_low = 12;     <span class="comment">%standard deviations for low sensitivity setting</span>
+Data20sec = zeros(200,1);
+history = zeros(100,1);
+
+RI_med = zeros(100,1); <span class="comment">%1 if real interrupt, 0 if false interrupt</span>
+RI_high = zeros(100,1);
+RI_low = zeros(100,1);
+ID_low = zeros(100,1);   <span class="comment">%1 if interrupt detected, 0 if interrupt not detected</span>
+ID_med = zeros(100,1);
+ID_high = zeros(100,1);
+TID_low = zeros(100,1);    <span class="comment">%1 if ID = RI = 1, 0 otherwise</span>
+TID_med = zeros(100,1);
+TID_high = zeros(100,1);
+FD_low = zeros(100,1);     <span class="comment">%1 if ID = 1 &amp; RI = 0, 0 otherwise</span>
+FD_med = zeros(100,1);
+FD_high = zeros(100,1);
+FN_low = zeros(100,1);     <span class="comment">%1 if ID = 0 &amp; RI = 1, 0 otherwise</span>
+FN_med = zeros(100,1);
+FN_high = zeros(100,1);
+FDR_low = 0;    <span class="comment">%probability of false interrupt given interrupt detection</span>
+FDR_med = 0;
+FDR_high = 0;
+FDR_low_array = zeros(samples,1);
+FDR_med_array = zeros(samples,1);
+FDR_high_array = zeros(samples,1);
+T_high_array = zeros(samples,1);     <span class="comment">%standard deviations for high sensitivity setting</span>
+T_med_array = zeros(samples,1);      <span class="comment">%standard deviations for medium sensitivity setting</span>
+T_low_array = zeros(samples,1);     <span class="comment">%standard deviations for low sensitivity setting</span>
+FN_low_array = zeros(samples,1);
+FN_med_array = zeros(samples,1);
+FN_high_array = zeros(samples,1);
+Opti_low = zeros(samples,1);
+Opti_med = zeros(samples,1);
+Opti_high = zeros(samples,1);
+
+
+<span class="comment">%IMPORT DATA</span>
+SoundData1 = <span class="string">'Book5.xlsx'</span>; <span class="comment">%Read excel file in folder</span>
+DataMat = zeros(30,4); <span class="comment">%Predefine Data Matrix</span>
+Ambients = xlsread(SoundData1, <span class="string">'A2:A31'</span>); <span class="comment">%Ambient 1st col</span>
+Quiets = xlsread(SoundData1, <span class="string">'B2:B31'</span>); <span class="comment">%Quiet is 2nd col</span>
+Mediums = xlsread(SoundData1, <span class="string">'C2:C31'</span>); <span class="comment">%Medium is 3rd col</span>
+Louds = xlsread(SoundData1, <span class="string">'D2:D31'</span>); <span class="comment">%Loud is 4th col</span>
+[k,DataLoc] = xlsread(SoundData1, <span class="string">'E1:E1'</span>);
+
+<span class="comment">%Define past 20 seconds (ambients)</span>
+
+
+<span class="keyword">for</span> s=1:samples
+    T_high=T_h_begin+s*(T_h_end-T_h_begin)/samples;
+    T_med=T_m_begin+s*(T_m_end-T_m_begin)/samples;
+    T_low=T_l_begin+s*(T_l_end-T_l_begin)/samples;
+
+    T_high_array(s,1)=T_high;
+    T_med_array(s,1)=T_med;
+    T_low_array(s,1)=T_low;
+
+    RI_med = zeros(100,1); <span class="comment">%1 if real interrupt, 0 if false interrupt</span>
+    RI_high = zeros(100,1);
+    RI_low = zeros(100,1);
+    ID_low = zeros(100,1);   <span class="comment">%1 if interrupt detected, 0 if interrupt not detected</span>
+    ID_med = zeros(100,1);
+    ID_high = zeros(100,1);
+    TID_low = zeros(100,1);    <span class="comment">%1 if ID = RI = 1, 0 otherwise</span>
+    TID_med = zeros(100,1);
+    TID_high = zeros(100,1);
+    FD_low = zeros(100,1);     <span class="comment">%1 if ID = 1 &amp; RI = 0, 0 otherwise</span>
+    FD_med = zeros(100,1);
+    FD_high = zeros(100,1);
+    FN_low = zeros(100,1);     <span class="comment">%1 if ID = 0 &amp; RI = 1, 0 otherwise</span>
+    FN_med = zeros(100,1);
+    FN_high = zeros(100,1);
+
+
+
+
+<span class="keyword">for</span> c =1:200
+    Data20sec(c,1) = Ambients(randi([1 30],1,1),1);
+
+<span class="keyword">end</span>
+Ave20sec = mean(Data20sec);
+Std20sec = std(Data20sec);
+RT_high = Ave20sec+Std20sec*T_high; <span class="comment">%Running threshold level (high sens)</span>
+RT_med = Ave20sec+Std20sec*T_med; <span class="comment">%Running threshold level (med sens)</span>
+RT_low = Ave20sec+Std20sec*T_low; <span class="comment">%Running threshold level (low sens)</span>
+
+<span class="keyword">for</span> c=1:25
+    new = Ambients(randi([1 30],1,1),1);
+    history(c,1)=new;
+
+    <span class="keyword">if</span> new&gt;RT_high
+            ID_high(c,1)=1;
+            FD_high(c,1)=1;
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> new&gt;RT_med
+            ID_med(c,1)=1;
+            FD_med(c,1)=1;
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> new&gt;RT_low
+            ID_low(c,1)=1;
+            FD_low(c,1)=1;
+    <span class="keyword">end</span>
+
+<span class="keyword">end</span>
+
+<span class="comment">%Quiet interrupts</span>
+<span class="comment">%Only high sensitivity should activate interrupt</span>
+<span class="keyword">for</span> c=26:50
+    new = Quiets(randi([1 30],1,1),1);
+    history(c,1)=new;
+    RI_high(c,1)=1;
+    <span class="keyword">if</span> new&gt;RT_high
+            ID_high(c,1)=1;
+            TID_high(c,1)=1;
+    <span class="keyword">else</span>
+        FN_high(c,1)=1;
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> new&gt;RT_med
+            ID_med(c,1)=1;
+            FD_med(c,1)=1;
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> new&gt;RT_low
+            ID_low(c,1)=1;
+            FD_low(c,1)=1;
+    <span class="keyword">end</span>
+
+<span class="keyword">end</span>
+
+<span class="comment">%medium interrupts</span>
+<span class="comment">%Only high and medium sensitivity should activate interrupt</span>
+
+<span class="keyword">for</span> c=51:75
+    new = Mediums(randi([1 30],1,1),1);
+    history(c,1)=new;
+    RI_high(c,1)=1;
+    RI_med(c,1)=1;
+    <span class="keyword">if</span> new&gt;RT_high
+            ID_high(c,1)=1;
+            TID_high(c,1)=1;
+    <span class="keyword">else</span>
+        FN_high(c,1)=1;
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> new&gt;RT_med
+            ID_med(c,1)=1;
+            TID_med(c,1)=1;
+    <span class="keyword">else</span>
+        FN_med(c,1)=1;
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> new&gt;RT_low
+            ID_low(c,1)=1;
+            FD_low(c,1)=1;
+    <span class="keyword">end</span>
+
+<span class="keyword">end</span>
+
+
+
+<span class="comment">%loud interrupts</span>
+<span class="comment">%all activate interrupt</span>
+<span class="keyword">for</span> c=76:100
+    new = Louds(randi([1 30],1,1),1);
+    history(c,1)=new;
+    RI_high(c,1)=1;
+    RI_med(c,1)=1;
+    RI_low(c,1)=1;
+    <span class="keyword">if</span> new&gt;RT_high
+            ID_high(c,1)=1;
+            TID_high(c,1)=1;
+    <span class="keyword">else</span>
+        FN_high(c,1)=1;
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> new&gt;RT_med
+            ID_med(c,1)=1;
+            TID_med(c,1)=1;
+    <span class="keyword">else</span>
+        FN_med(c,1)=1;
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> new&gt;RT_low
+            ID_low(c,1)=1;
+            TID_low(c,1)=1;
+    <span class="keyword">else</span>
+        FN_low(c,1)=1;
+    <span class="keyword">end</span>
+
+<span class="keyword">end</span>
+
+<span class="comment">%False Interrupt Detection Rate - Print all</span>
+<span class="comment">%FDR_low = sum(FD_low, 'all')/sum(ID_low, 'all');    %probability of false interrupt given interrupt detection</span>
+<span class="comment">%FDR_med = sum(FD_med, 'all')/sum(ID_med, 'all');</span>
+<span class="comment">%FDR_high = sum(FD_high, 'all')/sum(ID_high, 'all');</span>
+FDR_low =  sum(FD_low, <span class="string">'all'</span>)/sum(ID_low, <span class="string">'all'</span>);     <span class="comment">%probability of false interrupt given interrupt detection</span>
+FDR_med = sum(FD_med, <span class="string">'all'</span>)/sum(ID_med, <span class="string">'all'</span>);
+FDR_high = sum(FD_high, <span class="string">'all'</span>)/sum(ID_high, <span class="string">'all'</span>);
+
+FDR_low_array(s,1) = FDR_low;
+FDR_med_array(s,1) = FDR_med;
+FDR_high_array(s,1) = FDR_high;
+
+FN_low_array(s,1)=sum(FN_low,<span class="string">'all'</span>)/100;
+FN_med_array(s,1)=sum(FN_med,<span class="string">'all'</span>)/100;
+FN_high_array(s,1)=sum(FN_high,<span class="string">'all'</span>)/100;
+
+Opti_low(s,1)= FDR_low_array(s,1)+FN_low_array(s,1);
+Opti_med(s,1)=FDR_med_array(s,1)+FN_med_array(s,1);
+Opti_high(s,1)=FDR_high_array(s,1)+FN_high_array(s,1);
+
+
+<span class="keyword">end</span>
+
+<span class="comment">%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span>
+
+FDRfit_high = fit( T_high_array,FDR_high_array, <span class="string">'poly3'</span>,<span class="string">'normalize'</span>,<span class="string">'on'</span>);
+FNfit_high = fit( T_high_array, FN_high_array,<span class="string">'poly3'</span>,<span class="string">'normalize'</span>,<span class="string">'on'</span>);
+
+FDRfit_med = fit( T_med_array, FDR_med_array,<span class="string">'poly3'</span>,<span class="string">'normalize'</span>,<span class="string">'on'</span>);
+FNfit_med = fit( T_med_array, FN_med_array,<span class="string">'poly3'</span>,<span class="string">'normalize'</span>,<span class="string">'on'</span>);
+
+FDRfit_low = fit( T_low_array,FDR_low_array,<span class="string">'poly3'</span>,<span class="string">'normalize'</span>,<span class="string">'on'</span> );
+FNfit_low = fit( T_low_array,FN_low_array,<span class="string">'poly3'</span>,<span class="string">'normalize'</span>,<span class="string">'on'</span> );
+
+
+DataLoc = char(DataLoc);
+figure(1)
+subplot(2,1,1)
+plot(FDRfit_low,T_low_array,FDR_low_array)
+title(<span class="string">'False Detection Rate: Low Sensitivity, %s'</span>)
+xlabel(<span class="string">'# of Threshold Standard Deviations, T'</span>)
+ylabel(<span class="string">'FDR'</span>)
+grid <span class="string">on</span>
+subplot(2,1,2)
+plot(FNfit_low,T_low_array,FN_low_array)
+title(<span class="string">'False Negatives: Low Sensitivity,'</span>)
+xlabel(<span class="string">'# of Threshold Standard Deviations, T'</span>)
+ylabel(<span class="string">'FN'</span>)
+suptitle(DataLoc)
+grid <span class="string">on</span>
+
+figure(2)
+subplot(2,1,1)
+plot(FDRfit_med,T_med_array,FDR_med_array)
+title(<span class="string">'False Detection Rate: Medium Sensitivity,'</span>)
+xlabel(<span class="string">'# of Threshold Standard Deviations, T'</span>)
+ylabel(<span class="string">'FDR'</span>)
+grid <span class="string">on</span>
+subplot(2,1,2)
+plot(FNfit_med,T_med_array,FN_med_array)
+title(<span class="string">'False Negatives: Medium Sensitivity,'</span>)
+xlabel(<span class="string">'# of Threshold Standard Deviations, T'</span>)
+ylabel(<span class="string">'FN/100'</span>)
+suptitle(DataLoc)
+grid <span class="string">on</span>
+
+figure(3)
+subplot(2,1,1)
+plot(FDRfit_high,T_high_array,FDR_high_array)
+title(<span class="string">'False Detection Rate: High Sensitivity,'</span>)
+xlabel(<span class="string">'# of Threshold Standard Deviations, T'</span>)
+ylabel(<span class="string">'FDR'</span>)
+grid <span class="string">on</span>
+subplot(2,1,2)
+plot(FNfit_high,T_high_array,FN_high_array)
+title(<span class="string">'False Negatives: High Sensitivity,'</span>)
+xlabel(<span class="string">'# of Threshold Standard Deviations, T'</span>)
+ylabel(<span class="string">'FN/100'</span>)
+suptitle(DataLoc)
+grid <span class="string">on</span>
+
+
+
+fit_high = fit( T_high_array,Opti_high, <span class="string">'poly3'</span>,<span class="string">'normalize'</span>,<span class="string">'on'</span>);
+fit_med = fit( T_med_array, Opti_med,<span class="string">'poly3'</span>,<span class="string">'normalize'</span>,<span class="string">'on'</span>);
+fit_low = fit( T_low_array,Opti_low,<span class="string">'poly3'</span>,<span class="string">'normalize'</span>,<span class="string">'on'</span> );
+
+figure(4)
+subplot(3,1,1)
+plot(fit_high,T_high_array,Opti_high)
+<span class="comment">%fit_high( 0.01 );</span>
+title(<span class="string">'FDR+False Negatives: High Sensitivity,'</span>)
+xlabel(<span class="string">'Threshold stdev'</span>)
+ylabel(<span class="string">'Pr'</span>)
+grid <span class="string">on</span>
+
+subplot(3,1,2)
+plot(fit_med, T_med_array,Opti_med)
+<span class="comment">%fit_med( 0.01 );</span>
+title(<span class="string">'FDR+False Negatives: Med Sensitivity,'</span>)
+xlabel(<span class="string">'Threshold stdev'</span>)
+ylabel(<span class="string">'Pr'</span>)
+grid <span class="string">on</span>
+
+subplot(3,1,3)
+plot(fit_low,T_low_array,Opti_low)
+<span class="comment">%fit_low( 0.01 );</span>
+title(<span class="string">'FDR+False Negatives: Low Sensitivity, '</span>)
+xlabel(<span class="string">'Threshold stdev'</span>)
+ylabel(<span class="string">'Pr'</span>)
+suptitle(DataLoc)
+grid <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="ece458_receiveroperating_01.png" alt=""> <img vspace="5" hspace="5" src="ece458_receiveroperating_02.png" alt=""> <img vspace="5" hspace="5" src="ece458_receiveroperating_03.png" alt=""> <img vspace="5" hspace="5" src="ece458_receiveroperating_04.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2019b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%ECE458 - Senior Design
+%Michael Benker
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% FALSE DETECTION RATES %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clf;clear all; clc; close all;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+samples=10000;
+T_h_begin = 1.5; %Begin and end for parameter sweep of threshold numbers
+T_h_end = 10;
+T_m_begin = 4;
+T_m_end = 20;
+T_l_begin = 8;
+T_l_end = 30;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%VARIABLES
+Ave2sec = 0;    %2-second average
+T_high = 4;     %standard deviations for high sensitivity setting
+T_med = 8;      %standard deviations for medium sensitivity setting
+T_low = 12;     %standard deviations for low sensitivity setting
+Data20sec = zeros(200,1);
+history = zeros(100,1);
+
+RI_med = zeros(100,1); %1 if real interrupt, 0 if false interrupt
+RI_high = zeros(100,1); 
+RI_low = zeros(100,1);
+ID_low = zeros(100,1);   %1 if interrupt detected, 0 if interrupt not detected
+ID_med = zeros(100,1); 
+ID_high = zeros(100,1); 
+TID_low = zeros(100,1);    %1 if ID = RI = 1, 0 otherwise
+TID_med = zeros(100,1); 
+TID_high = zeros(100,1); 
+FD_low = zeros(100,1);     %1 if ID = 1 & RI = 0, 0 otherwise
+FD_med = zeros(100,1);
+FD_high = zeros(100,1);
+FN_low = zeros(100,1);     %1 if ID = 0 & RI = 1, 0 otherwise
+FN_med = zeros(100,1);
+FN_high = zeros(100,1);
+FDR_low = 0;    %probability of false interrupt given interrupt detection
+FDR_med = 0;
+FDR_high = 0;
+FDR_low_array = zeros(samples,1);    
+FDR_med_array = zeros(samples,1);
+FDR_high_array = zeros(samples,1);
+T_high_array = zeros(samples,1);     %standard deviations for high sensitivity setting
+T_med_array = zeros(samples,1);      %standard deviations for medium sensitivity setting
+T_low_array = zeros(samples,1);     %standard deviations for low sensitivity setting
+FN_low_array = zeros(samples,1);    
+FN_med_array = zeros(samples,1);
+FN_high_array = zeros(samples,1);
+Opti_low = zeros(samples,1);    
+Opti_med = zeros(samples,1);
+Opti_high = zeros(samples,1);
+
+
+%IMPORT DATA
+SoundData1 = 'Book5.xlsx'; %Read excel file in folder
+DataMat = zeros(30,4); %Predefine Data Matrix
+Ambients = xlsread(SoundData1, 'A2:A31'); %Ambient 1st col
+Quiets = xlsread(SoundData1, 'B2:B31'); %Quiet is 2nd col
+Mediums = xlsread(SoundData1, 'C2:C31'); %Medium is 3rd col
+Louds = xlsread(SoundData1, 'D2:D31'); %Loud is 4th col
+[k,DataLoc] = xlsread(SoundData1, 'E1:E1');
+
+%Define past 20 seconds (ambients)
+
+
+for s=1:samples
+    T_high=T_h_begin+s*(T_h_end-T_h_begin)/samples;
+    T_med=T_m_begin+s*(T_m_end-T_m_begin)/samples;
+    T_low=T_l_begin+s*(T_l_end-T_l_begin)/samples;
+    
+    T_high_array(s,1)=T_high;
+    T_med_array(s,1)=T_med;
+    T_low_array(s,1)=T_low;
+    
+    RI_med = zeros(100,1); %1 if real interrupt, 0 if false interrupt
+    RI_high = zeros(100,1); 
+    RI_low = zeros(100,1);
+    ID_low = zeros(100,1);   %1 if interrupt detected, 0 if interrupt not detected
+    ID_med = zeros(100,1); 
+    ID_high = zeros(100,1); 
+    TID_low = zeros(100,1);    %1 if ID = RI = 1, 0 otherwise
+    TID_med = zeros(100,1); 
+    TID_high = zeros(100,1); 
+    FD_low = zeros(100,1);     %1 if ID = 1 & RI = 0, 0 otherwise
+    FD_med = zeros(100,1);
+    FD_high = zeros(100,1);
+    FN_low = zeros(100,1);     %1 if ID = 0 & RI = 1, 0 otherwise
+    FN_med = zeros(100,1);
+    FN_high = zeros(100,1);
+    
+    
+    
+
+for c =1:200
+    Data20sec(c,1) = Ambients(randi([1 30],1,1),1);
+    
+end
+Ave20sec = mean(Data20sec);
+Std20sec = std(Data20sec);
+RT_high = Ave20sec+Std20sec*T_high; %Running threshold level (high sens)
+RT_med = Ave20sec+Std20sec*T_med; %Running threshold level (med sens)
+RT_low = Ave20sec+Std20sec*T_low; %Running threshold level (low sens)
+
+for c=1:25
+    new = Ambients(randi([1 30],1,1),1);
+    history(c,1)=new;
+
+    if new>RT_high
+            ID_high(c,1)=1;
+            FD_high(c,1)=1;
+    end
+    if new>RT_med
+            ID_med(c,1)=1;
+            FD_med(c,1)=1;
+    end
+    if new>RT_low
+            ID_low(c,1)=1; 
+            FD_low(c,1)=1;
+    end
+
+end
+
+%Quiet interrupts
+%Only high sensitivity should activate interrupt
+for c=26:50
+    new = Quiets(randi([1 30],1,1),1);
+    history(c,1)=new;
+    RI_high(c,1)=1;
+    if new>RT_high
+            ID_high(c,1)=1;
+            TID_high(c,1)=1;
+    else
+        FN_high(c,1)=1;
+    end
+    if new>RT_med
+            ID_med(c,1)=1;
+            FD_med(c,1)=1;
+    end
+    if new>RT_low
+            ID_low(c,1)=1; 
+            FD_low(c,1)=1;
+    end
+
+end
+    
+%medium interrupts
+%Only high and medium sensitivity should activate interrupt
+
+for c=51:75
+    new = Mediums(randi([1 30],1,1),1);
+    history(c,1)=new;
+    RI_high(c,1)=1;
+    RI_med(c,1)=1;
+    if new>RT_high
+            ID_high(c,1)=1;
+            TID_high(c,1)=1;
+    else
+        FN_high(c,1)=1;
+    end
+    if new>RT_med
+            ID_med(c,1)=1;
+            TID_med(c,1)=1;
+    else
+        FN_med(c,1)=1;
+    end
+    if new>RT_low
+            ID_low(c,1)=1; 
+            FD_low(c,1)=1;
+    end
+
+end
+
+
+
+%loud interrupts
+%all activate interrupt
+for c=76:100
+    new = Louds(randi([1 30],1,1),1);
+    history(c,1)=new;
+    RI_high(c,1)=1;
+    RI_med(c,1)=1;
+    RI_low(c,1)=1;
+    if new>RT_high
+            ID_high(c,1)=1;
+            TID_high(c,1)=1;
+    else
+        FN_high(c,1)=1;
+    end
+    if new>RT_med
+            ID_med(c,1)=1;
+            TID_med(c,1)=1;
+    else
+        FN_med(c,1)=1;
+    end
+    if new>RT_low
+            ID_low(c,1)=1; 
+            TID_low(c,1)=1;
+    else
+        FN_low(c,1)=1;
+    end
+
+end
+
+%False Interrupt Detection Rate - Print all
+%FDR_low = sum(FD_low, 'all')/sum(ID_low, 'all');    %probability of false interrupt given interrupt detection
+%FDR_med = sum(FD_med, 'all')/sum(ID_med, 'all');
+%FDR_high = sum(FD_high, 'all')/sum(ID_high, 'all');
+FDR_low =  sum(FD_low, 'all')/sum(ID_low, 'all');     %probability of false interrupt given interrupt detection
+FDR_med = sum(FD_med, 'all')/sum(ID_med, 'all');
+FDR_high = sum(FD_high, 'all')/sum(ID_high, 'all');
+
+FDR_low_array(s,1) = FDR_low;    
+FDR_med_array(s,1) = FDR_med;
+FDR_high_array(s,1) = FDR_high;
+
+FN_low_array(s,1)=sum(FN_low,'all')/100;    
+FN_med_array(s,1)=sum(FN_med,'all')/100; 
+FN_high_array(s,1)=sum(FN_high,'all')/100;
+
+Opti_low(s,1)= FDR_low_array(s,1)+FN_low_array(s,1);    
+Opti_med(s,1)=FDR_med_array(s,1)+FN_med_array(s,1);
+Opti_high(s,1)=FDR_high_array(s,1)+FN_high_array(s,1);
+
+
+end
+
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+FDRfit_high = fit( T_high_array,FDR_high_array, 'poly3','normalize','on');
+FNfit_high = fit( T_high_array, FN_high_array,'poly3','normalize','on');
+
+FDRfit_med = fit( T_med_array, FDR_med_array,'poly3','normalize','on');
+FNfit_med = fit( T_med_array, FN_med_array,'poly3','normalize','on');
+
+FDRfit_low = fit( T_low_array,FDR_low_array,'poly3','normalize','on' );
+FNfit_low = fit( T_low_array,FN_low_array,'poly3','normalize','on' );
+
+
+DataLoc = char(DataLoc);
+figure(1)
+subplot(2,1,1)
+plot(FDRfit_low,T_low_array,FDR_low_array)
+title('False Detection Rate: Low Sensitivity, %s')
+xlabel('# of Threshold Standard Deviations, T')
+ylabel('FDR')
+grid on
+subplot(2,1,2)
+plot(FNfit_low,T_low_array,FN_low_array)
+title('False Negatives: Low Sensitivity,')
+xlabel('# of Threshold Standard Deviations, T')
+ylabel('FN')
+suptitle(DataLoc)
+grid on
+
+figure(2)
+subplot(2,1,1)
+plot(FDRfit_med,T_med_array,FDR_med_array)
+title('False Detection Rate: Medium Sensitivity,')
+xlabel('# of Threshold Standard Deviations, T')
+ylabel('FDR')
+grid on
+subplot(2,1,2)
+plot(FNfit_med,T_med_array,FN_med_array)
+title('False Negatives: Medium Sensitivity,')
+xlabel('# of Threshold Standard Deviations, T')
+ylabel('FN/100')
+suptitle(DataLoc)
+grid on
+
+figure(3)
+subplot(2,1,1)
+plot(FDRfit_high,T_high_array,FDR_high_array)
+title('False Detection Rate: High Sensitivity,')
+xlabel('# of Threshold Standard Deviations, T')
+ylabel('FDR')
+grid on
+subplot(2,1,2)
+plot(FNfit_high,T_high_array,FN_high_array)
+title('False Negatives: High Sensitivity,')
+xlabel('# of Threshold Standard Deviations, T')
+ylabel('FN/100')
+suptitle(DataLoc)
+grid on
+
+
+
+fit_high = fit( T_high_array,Opti_high, 'poly3','normalize','on');
+fit_med = fit( T_med_array, Opti_med,'poly3','normalize','on');
+fit_low = fit( T_low_array,Opti_low,'poly3','normalize','on' );
+
+figure(4)
+subplot(3,1,1)
+plot(fit_high,T_high_array,Opti_high)
+%fit_high( 0.01 );
+title('FDR+False Negatives: High Sensitivity,')
+xlabel('Threshold stdev')
+ylabel('Pr')
+grid on
+
+subplot(3,1,2)
+plot(fit_med, T_med_array,Opti_med)
+%fit_med( 0.01 );
+title('FDR+False Negatives: Med Sensitivity,')
+xlabel('Threshold stdev')
+ylabel('Pr')
+grid on
+
+subplot(3,1,3)
+plot(fit_low,T_low_array,Opti_low)
+%fit_low( 0.01 );
+title('FDR+False Negatives: Low Sensitivity, ')
+xlabel('Threshold stdev')
+ylabel('Pr')
+suptitle(DataLoc)
+grid on
+
+
+
+
+
+##### SOURCE END #####
+--></body></html>

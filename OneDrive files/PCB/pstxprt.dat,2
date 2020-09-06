@@ -1,0 +1,400 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 17.2.0 d001Dec-02-2019 at 11:48:19 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='ECE457_OVERVIEWSCHEMATIC';
+ POST_TIME='Apr 15 2018 17:30:46';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ C1 'C_CAP196_1U':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20084@ANALOG.C.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20084@analog.\c.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20084@analog.\c.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J10 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20736@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20736@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20736@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J11 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20753@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20753@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20753@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J12 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20770@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20770@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20770@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J13 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20839@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20839@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20839@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J14 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20863@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20863@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20863@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J15 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20932@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20932@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20932@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J16 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20983@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20983@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20983@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J17 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21000@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21000@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21000@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J18 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21019@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21019@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21019@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J19 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21070@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21070@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21070@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J20 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21087@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21087@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21087@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J21 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21106@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21106@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21106@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J22 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21157@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21157@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21157@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J23 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21174@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21174@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21174@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J24 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21193@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21193@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21193@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J25 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21246@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21246@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21246@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J26 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21263@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21263@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21263@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J27 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21282@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21282@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21282@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J28 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS21335@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins21335@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins21335@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J29 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS23178@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins23178@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins23178@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J30 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS23205@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins23205@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins23205@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J31 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS23266@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins23266@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins23266@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J32 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS23325@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins23325@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins23325@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J33 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS26093@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins26093@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins26093@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J7 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20635@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20635@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20635@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J8 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20652@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20652@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20652@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J9 'CON1_JUMPER1_CON1':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20669@CONNECTOR.CON1.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20669@connector.\con1.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20669@connector.\con1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R10 'R_AXRC05_4.7K':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS19814@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins19814@analog.\r.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins19814@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R11 'R_AXRC05_4.7K':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20106@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20106@analog.\r.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20106@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R12 'R_AXRC05_4.7K':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS19858@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins19858@analog.\r.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins19858@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R13 'R_AXRC05_4.7K':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20128@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20128@analog.\r.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20128@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R6 'R_AXRC05_2.2K':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS19792@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins19792@analog.\r.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins19792@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R7 'R_AXRC05_RS':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS20036@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins20036@analog.\r.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins20036@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R8 'R_AXRC05_RF':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS19606@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins19606@analog.\r.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins19606@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R9 'R_AXRC05_4.7K':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS19628@ANALOG.R.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins19628@analog.\r.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins19628@analog.\r.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U11 'ATMEGA328PB-AUR_32A_ATMEGA328PB':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS24435@2019-11-20_18-34-56.ATMEGA328PB-AUR.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins24435@\2019-11-20_18-34-56\.\atmega328pb-aur.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins24435@\2019-11-20_18-34-56\.\atmega328pb-aur.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U12 'UA741CPE4_P8_UA741CPE4':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS25089@2019-12-01_02-03-24.UA741CPE4.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins25089@\2019-12-01_02-03-24\.\ua741cpe4.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins25089@\2019-12-01_02-03-24\.\ua741cpe4.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U13 'CD4066BE_N14_CD4066BE':;
+
+SECTION_NUMBER 1
+ '@ECE457_OVERVIEWSCHEMATIC.SCHEMATIC1(SCH_1):INS25984@2019-11-29_16-52-40.CD4066BE.NORMAL(CHIPS)':
+ C_PATH='@ece457_overviewschematic.schematic1(sch_1):ins25984@\2019-11-29_16-52-40\.\cd4066be.normal\(chips)',
+ P_PATH='@ece457_overviewschematic.schematic1(sch_1):page1_ins25984@\2019-11-29_16-52-40\.\cd4066be.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.
